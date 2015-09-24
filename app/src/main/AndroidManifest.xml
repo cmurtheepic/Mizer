@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spizer.mizer2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="Mizer"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Mizer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SessionMenuActivity"
+            android:label="Mizer"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spizer.mizer2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DifficultyMenu"
+            android:label="Mizer"
+            android:parentActivityName=".ProblemSelector" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spizer.mizer2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NotWorking"
+            android:label="Mizer"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spizer.mizer2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ProblemSelector"
+            android:label="Mizer"
+            android:parentActivityName=".MathProblemSelector" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spizer.mizer2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPractice"
+            android:label="@string/title_activity_basics_practice"
+            android:parentActivityName=".DifficultyMenu"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spizer.mizer2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MathProblemSelector"
+            android:label="@string/title_activity_math_problem_selector"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spizer.mizer2.SessionMenuActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
