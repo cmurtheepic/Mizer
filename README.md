@@ -26,6 +26,6 @@ for the Licensee has right to; Sell, Distribute, or Rent the Developers Applicat
 have the right to Sell, Distribute, Rent the Application under Agreement with the Developer.) Documents that give the Individual
 permission todo such things as stated before.
 
-* ONLY
-** May not yet be a working (Functional) feature of the Application
-*** Algebra, Geometry, and Calculus
+*  **ONLY
+* **May not yet be a working (Functional) feature of the Application
+* ***Algebra, Geometry, and Calculus
