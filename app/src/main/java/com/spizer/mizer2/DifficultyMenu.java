@@ -22,12 +22,11 @@ public class DifficultyMenu extends AppCompatActivity {
 
     /** calls to make the class ProblemSelector usable in this class **/
     @SuppressWarnings("unused")
-    ProblemSelector PS = new ProblemSelector();
+    private ProblemSelector PS = new ProblemSelector();
 
     /** calls to make the class BasicsPractice usable un this class **/
     @SuppressWarnings("CanBeFinal")
-    private
-    BasicsPractice BP = new BasicsPractice();
+    private BasicsPractice BP = new BasicsPractice();
 
     private boolean AChecked;
     private boolean SChecked;
@@ -41,6 +40,7 @@ public class DifficultyMenu extends AppCompatActivity {
 
     @SuppressWarnings("unused")
     private int ANum;
+    @SuppressWarnings("unused")
     private int SNum;
     @SuppressWarnings("unused")
     private int MNum;
@@ -60,12 +60,6 @@ public class DifficultyMenu extends AppCompatActivity {
     public int MultiDiff;
     @SuppressWarnings("unused")
     public int DivisDiff;
-
-    /** called once the user has selected a difficulty for each of the math operations to practice **/
-    private void WF() {
-        Intent WhenFinished = new Intent(this, BasicsPractice.class);
-        startActivity(WhenFinished);
-    }
 
     @SuppressWarnings("FieldCanBeLocal")
     private ExpandableListAdapter listAdapter;
@@ -372,5 +366,11 @@ public class DifficultyMenu extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /** called once the user has selected a difficulty for each of the math operations to practice **/
+    private void WF() {
+        Intent WhenFinished = new Intent(this, BasicsPractice.class);
+        startActivity(WhenFinished);
     }
 }
