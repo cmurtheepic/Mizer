@@ -33,7 +33,7 @@ public class DifficultyMenu extends AppCompatActivity {
     private boolean MChecked;
     private boolean DChecked;
 
-    public boolean AddP = true;
+    public boolean AddP;
     public boolean SubP;
     public boolean MultiP;
     public boolean DivisP;

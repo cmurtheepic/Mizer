@@ -15,16 +15,6 @@ public class BasicsPractice extends AppCompatActivity {
 
     private TextView PO;
 
-    private Button Button1;
-    private Button Button2;
-    private Button Button3;
-    private Button Button4;
-    private Button Button5;
-    private Button Button6;
-    private Button Button7;
-    private Button Button8;
-    private Button Button9;
-
     private String B1;
     private String B2;
     private String B3;
@@ -135,6 +125,7 @@ public class BasicsPractice extends AppCompatActivity {
     /** randomly generates a operation to do from a value of 0-value determined by operations the user has chosen to practice **/
     /** also generates 2 values for the user to add, subtract, multiply, or divide. to solve the problem **/
     private void GenerateOperation() {
+        int AS1 = 0;
         Double d = Math.random() * Max1;
         int o1 = d.intValue();
         Log.d("BasicsPractice.java","the GenerateOperation function generated : " + o1 + " : as the number to determine the operation to be built");
@@ -157,26 +148,29 @@ public class BasicsPractice extends AppCompatActivity {
                 Double D1 = Math.random() * 8;
                 int S1 = D1.intValue();
                 if(S1 == 0) {
-                    B1 = Integer.toString(a1 + a2);
+                    AS1 = a1 + a2;
+                    B1 = Integer.toString(AS1);
                 } else if(S1 == 1) {
-                    B2 = Integer.toString(a1 + a2);
+                    B2 = Integer.toString(AS1);
                 } else if(S1 == 2) {
-                    B3 = Integer.toString(a1 + a2);
+                    B3 = Integer.toString(AS1);
                 } else if(S1 == 3) {
-                    B4 = Integer.toString(a1 + a2);
+                    B4 = Integer.toString(AS1);
                 }else if(S1 == 4) {
-                    B5 = Integer.toString(a1 + a2);
+                    B5 = Integer.toString(AS1);
                 } else if(S1 == 5) {
-                    B6 = Integer.toString(a1 + a2);
+                    B6 = Integer.toString(AS1);
                 } else if(S1 == 6) {
-                    B7 = Integer.toString(a1 + a2);
+                    B7 = Integer.toString(AS1);
                 } else if(S1 == 7) {
-                    B8 = Integer.toString(a1 + a2);
+                    B8 = Integer.toString(AS1);
                 }else if(S1 == 8) {
-                    B9 = Integer.toString(a1 + a2);
+                    B9 = Integer.toString(AS1);
                 } else {
-                    Log.e("BasicsPractice.java","Something went horribly wron on line : 160-180");
+                    Log.e("BasicsPractice.java","Something went horribly wrong on line : 160-181");
                 }
+                Log.d("BasicsPractice.java","the button number is : " + S1 + 1);
+                Log.d("BasicsPractice.java","the button output is : " + AS1);
                 OutputToAnswerSelection();
                 OutputToProblemView();
             }
@@ -188,6 +182,31 @@ public class BasicsPractice extends AppCompatActivity {
                 Double d6 = Math.random() * SD;
                 int s2 = d6.intValue();
                 Output = s1 + " - " + s2;
+                Double D1 = Math.random() * 8;
+                int S1 = D1.intValue();
+                if(S1 == 0) {
+                    AS1 = s1 - s2;
+                    B1 = Integer.toString(AS1);
+                } else if(S1 == 1) {
+                    B2 = Integer.toString(AS1);
+                } else if(S1 == 2) {
+                    B3 = Integer.toString(AS1);
+                } else if(S1 == 3) {
+                    B4 = Integer.toString(AS1);
+                }else if(S1 == 4) {
+                    B5 = Integer.toString(AS1);
+                } else if(S1 == 5) {
+                    B6 = Integer.toString(AS1);
+                } else if(S1 == 6) {
+                    B7 = Integer.toString(AS1);
+                } else if(S1 == 7) {
+                    B8 = Integer.toString(AS1);
+                }else if(S1 == 8) {
+                    B9 = Integer.toString(AS1);
+                } else {
+                    Log.e("BasicsPractice.java","Something went horribly wrong on line : 196-217");
+                }
+                OutputToAnswerSelection();
                 OutputToProblemView();
             }
         } else if(o1 == 2) {
@@ -198,6 +217,31 @@ public class BasicsPractice extends AppCompatActivity {
                 Double d7 = Math.random() * MD;
                 int m2 = d7.intValue();
                 Output = m1 + " * " + m2;
+                Double D1 = Math.random() * 8;
+                int S1 = D1.intValue();
+                if(S1 == 0) {
+                    AS1 = m1 * m2;
+                    B1 = Integer.toString(AS1);
+                } else if(S1 == 1) {
+                    B2 = Integer.toString(AS1);
+                } else if(S1 == 2) {
+                    B3 = Integer.toString(AS1);
+                } else if(S1 == 3) {
+                    B4 = Integer.toString(AS1);
+                }else if(S1 == 4) {
+                    B5 = Integer.toString(AS1);
+                } else if(S1 == 5) {
+                    B6 = Integer.toString(AS1);
+                } else if(S1 == 6) {
+                    B7 = Integer.toString(AS1);
+                } else if(S1 == 7) {
+                    B8 = Integer.toString(AS1);
+                }else if(S1 == 8) {
+                    B9 = Integer.toString(AS1);
+                } else {
+                    Log.e("BasicsPractice.java","Something went horribly wrong on line : 232-253");
+                }
+                OutputToAnswerSelection();
                 OutputToProblemView();
             }
         } else if(o1 == 3) {
@@ -208,6 +252,33 @@ public class BasicsPractice extends AppCompatActivity {
                 Double d8 = Math.random() * DD;
                 int d2 = d8.intValue();
                 Output = d1 + " / " + d2;
+                Double D1 = Math.random() * 9;
+                int S1 = D1.intValue();
+                if(S1 == 0) {
+                    AS1 = d1 / d2;
+                    B1 = Integer.toString(AS1);
+                } else if(S1 == 1) {
+                    B2 = Integer.toString(AS1);
+                } else if(S1 == 2) {
+                    B3 = Integer.toString(AS1);
+                } else if(S1 == 3) {
+                    B4 = Integer.toString(AS1);
+                }else if(S1 == 4) {
+                    B5 = Integer.toString(AS1);
+                } else if(S1 == 5) {
+                    B6 = Integer.toString(AS1);
+                } else if(S1 == 6) {
+                    B7 = Integer.toString(AS1);
+                } else if(S1 == 7) {
+                    B8 = Integer.toString(AS1);
+                }else if(S1 == 8) {
+                    B9 = Integer.toString(AS1);
+                } else {
+                    Log.e("BasicsPractice.java","Something went horribly wrong on line : 268-289");
+                }
+                Log.d("BasicsPractice.java","the button number is : " + S1 + 1);
+                Log.d("BasicsPractice.java","the button output is : " + AS1);
+                OutputToAnswerSelection();
                 OutputToProblemView();
             }
         }
@@ -232,15 +303,15 @@ public class BasicsPractice extends AppCompatActivity {
         Button button8 = (Button) findViewById(R.id.button8);
         Button button9 = (Button) findViewById(R.id.button9);
 
-        try {Button1.setText(B1);} catch (Exception e) { e.printStackTrace(); }
-        try {Button2.setText(B2);} catch (Exception e) { e.printStackTrace(); }
-        try {Button2.setText(B3);} catch (Exception e) { e.printStackTrace(); }
-        try {Button2.setText(B4);} catch (Exception e) { e.printStackTrace(); }
-        try {Button2.setText(B5);} catch (Exception e) { e.printStackTrace(); }
-        try {Button2.setText(B6);} catch (Exception e) { e.printStackTrace(); }
-        try {Button2.setText(B7);} catch (Exception e) { e.printStackTrace(); }
-        try {Button2.setText(B8);} catch (Exception e) { e.printStackTrace(); }
-        try {Button2.setText(B9);} catch (Exception e) { e.printStackTrace(); }
+        try {button1.setText(B1);} catch (Exception e) { e.printStackTrace(); }
+        try {button2.setText(B2);} catch (Exception e) { e.printStackTrace(); }
+        try {button2.setText(B3);} catch (Exception e) { e.printStackTrace(); }
+        try {button2.setText(B4);} catch (Exception e) { e.printStackTrace(); }
+        try {button2.setText(B5);} catch (Exception e) { e.printStackTrace(); }
+        try {button2.setText(B6);} catch (Exception e) { e.printStackTrace(); }
+        try {button2.setText(B7);} catch (Exception e) { e.printStackTrace(); }
+        try {button2.setText(B8);} catch (Exception e) { e.printStackTrace(); }
+        try {button2.setText(B9);} catch (Exception e) { e.printStackTrace(); }
     }
 
     public void Skip(@SuppressWarnings("UnusedParameters") View view) {
