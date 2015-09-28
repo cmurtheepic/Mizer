@@ -232,15 +232,15 @@ public class BasicsPractice extends AppCompatActivity {
         Button button8 = (Button) findViewById(R.id.button8);
         Button button9 = (Button) findViewById(R.id.button9);
 
-        Button1.setText(B1);
-        Button2.setText(B2);
-        Button2.setText(B3);
-        Button2.setText(B4);
-        Button2.setText(B5);
-        Button2.setText(B6);
-        Button2.setText(B7);
-        Button2.setText(B8);
-        Button2.setText(B9);
+        try {Button1.setText(B1);} catch (Exception e) { e.printStackTrace(); }
+        try {Button2.setText(B2);} catch (Exception e) { e.printStackTrace(); }
+        try {Button2.setText(B3);} catch (Exception e) { e.printStackTrace(); }
+        try {Button2.setText(B4);} catch (Exception e) { e.printStackTrace(); }
+        try {Button2.setText(B5);} catch (Exception e) { e.printStackTrace(); }
+        try {Button2.setText(B6);} catch (Exception e) { e.printStackTrace(); }
+        try {Button2.setText(B7);} catch (Exception e) { e.printStackTrace(); }
+        try {Button2.setText(B8);} catch (Exception e) { e.printStackTrace(); }
+        try {Button2.setText(B9);} catch (Exception e) { e.printStackTrace(); }
     }
 
     public void Skip(@SuppressWarnings("UnusedParameters") View view) {
