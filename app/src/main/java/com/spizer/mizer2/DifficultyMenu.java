@@ -21,8 +21,8 @@ import android.widget.Toast;
 public class DifficultyMenu extends AppCompatActivity {
 
     /** calls to make the class ProblemSelector usable in this class **/
-    @SuppressWarnings("unused")
-    private ProblemSelector PS = new ProblemSelector();
+//    @SuppressWarnings("unused")
+//    private ProblemSelector PS = new ProblemSelector();
 
     /** calls to make the class BasicsPractice usable un this class **/
     @SuppressWarnings("CanBeFinal")
@@ -33,7 +33,7 @@ public class DifficultyMenu extends AppCompatActivity {
     private boolean MChecked;
     private boolean DChecked;
 
-    public boolean AddP;
+    public boolean AddP = true;
     public boolean SubP;
     public boolean MultiP;
     public boolean DivisP;

@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class ProblemSelector extends AppCompatActivity {
 
     @SuppressWarnings("unused")
-    private boolean AddProb;
+    private boolean AddProb = true;
     @SuppressWarnings("unused")
     private boolean SubProb;
     @SuppressWarnings("unused")
@@ -63,7 +63,10 @@ public class ProblemSelector extends AppCompatActivity {
     @SuppressWarnings("unused")
     private int DNum;
 
+    /** calls to make the class DifficultyMenu usable in this class **/
     private final DifficultyMenu DM = new DifficultyMenu();
+
+    /** calls to make the class BasicsPractice usable in this class **/
     private final BasicsPractice BP = new BasicsPractice();
 
     private CheckBox checkbox1;
