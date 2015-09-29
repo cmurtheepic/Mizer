@@ -29,15 +29,48 @@ public class DifficultyMenu extends AppCompatActivity {
     public boolean MChecked;
     public boolean DChecked;
 
-    public boolean AddP = PS.AddProb;
-    public boolean SubP = PS.SubProb;
-    public boolean MultiP = PS.MultiProb;
-    public boolean DivisP = PS.DivisProb;
+    public boolean getAChecked() {
+        return AChecked;
+    }
 
-    public int ANum = PS.ANum;
-    public int SNum = PS.SNum;
-    public int MNum = PS.MNum;
-    public int DNum = PS.DNum;
+    public void setAChecked(boolean AChecked) {
+        this.AChecked = AChecked;
+    }
+
+    public boolean getSChecked() {
+        return SChecked;
+    }
+
+    public void setSChecked(boolean SChecked) {
+        this.SChecked = SChecked;
+    }
+
+    public boolean getMChecked() {
+        return MChecked;
+    }
+
+    public void setMChecked(boolean MChecked) {
+        this.MChecked = MChecked;
+    }
+
+    public boolean getDChecked() {
+        return DChecked;
+    }
+
+    public void setDChecked(boolean DChecked) {
+        this.DChecked = DChecked;
+    }
+
+//    public boolean AddP = PS.getAddProb();
+    public boolean AddP = true;
+    public boolean SubP = PS.getSubProb();
+    public boolean MultiP = PS.getMultiProb();
+    public boolean DivisP = PS.getDivisProb();
+
+    public int ANum = PS.getANum();
+    public int SNum = PS.getSNum();
+    public int MNum = PS.getMNum();
+    public int DNum = PS.getDNum();
 
     private int T1;
     private int T2;
@@ -49,14 +82,37 @@ public class DifficultyMenu extends AppCompatActivity {
     public int MD;
     public int DD;
 
-    @SuppressWarnings("unused")
-    private int AddDiff;
-    @SuppressWarnings("unused")
-    public int SubDiff;
-    @SuppressWarnings("unused")
-    public int MultiDiff;
-    @SuppressWarnings("unused")
-    public int DivisDiff;
+    public int getAD() {
+        return AD;
+    }
+
+    public void setAD(int AD) {
+        this.AD = AD;
+    }
+
+    public int getSD() {
+        return SD;
+    }
+
+    public void setSD(int SD) {
+        this.SD = SD;
+    }
+
+    public int getMD() {
+        return MD;
+    }
+
+    public void setMD(int MD) {
+        this.MD = MD;
+    }
+
+    public int getDD() {
+        return DD;
+    }
+
+    public void setDD(int DD) {
+        this.DD = DD;
+    }
 
     @SuppressWarnings("FieldCanBeLocal")
     private ExpandableListAdapter listAdapter;
@@ -67,26 +123,19 @@ public class DifficultyMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-//        String S1 = String.valueOf(PS.AddP);
-//        Log.d("DifficultyMenu.java", S1);
+        Log.d("DifficultyMenu.java","the value of AddProb = " + PS.getAddProb());
+        Log.d("DifficultyMenu.java","the value of SubProb = " + PS.getSubProb());
+        Log.d("DifficultyMenu.java","the value of MultiProb = " + PS.getMultiProb());
+        Log.d("DifficultyMenu.java","the value of DivisProb = " + PS.getDivisProb());
 
         String S11 = String.valueOf(AddP);
         Log.d("DifficultyMenu.java", S11);
 
-//        String S2 = String.valueOf(PS.SubP);
-//        Log.d("DifficultyMenu.java", S2);
-
         String S22 = String.valueOf(SubP);
         Log.d("DifficultyMenu.java", S22);
 
-//        String S3 = String.valueOf(PS.MultiP);
-//        Log.d("DifficultyMenu.java", S3);
-
         String S33 = String.valueOf(MultiP);
         Log.d("DifficultyMenu.java", S33);
-
-//        String S4 = String.valueOf(PS.DivisP);
-//        Log.d("DifficultyMenu.java", S4);
 
         String S44 = String.valueOf(DivisP);
         Log.d("DifficultyMenu.java", S44);
@@ -154,29 +203,37 @@ public class DifficultyMenu extends AppCompatActivity {
                 /** also gives an error to debug console level if something unexpected has happened **/
                 if (listDataHeader.get(groupPosition).equals("AdditionDifficulty")) {
                     AChecked = true;
+                    setAChecked(true);
                     getApplicationContext();
                     String St1 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
-                    Log.d("DifficultyMenu.java", "Line: 159 : " + St1);
+                    Log.d("DifficultyMenu.java", "Line: 171 : " + St1);
                     AD = Integer.parseInt(St1);
-                    Log.d("DifficultyMenu.java", "Line: 161 : " + AD);
+                    setAD(Integer.parseInt(St1));
+                    Log.d("DifficultyMenu.java", "Line: 173 : " + AD);
                 } else if (listDataHeader.get(groupPosition).equals("SubtractionDifficulty")) {
                     SChecked = true;
+                    setSChecked(true);
                     getApplicationContext();
                     String St2 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
-                    Log.d("DifficultyMenu.java", "Line: 166 : " + St2);
+                    Log.d("DifficultyMenu.java", "Line: 178 : " + St2);
                     SD = Integer.parseInt(St2);
+                    setSD(Integer.parseInt(St2));
                 } else if (listDataHeader.get(groupPosition).equals("MultiplicationDifficulty")) {
                     MChecked = true;
+                    setMChecked(true);
                     getApplicationContext();
                     String St3 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
-                    Log.d("DifficultyMenu.java", "Line: 172 : " + St3);
+                    Log.d("DifficultyMenu.java", "Line: 184 : " + St3);
                     MD = Integer.parseInt(St3);
+                    setMD(Integer.parseInt(St3));
                 } else if (listDataHeader.get(groupPosition).equals("DivisionDifficulty")) {
                     DChecked = true;
+                    setDChecked(true);
                     getApplicationContext();
                     String St4 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
-                    Log.d("DifficultyMenu.java", "Line: 178 : " + St4);
+                    Log.d("DifficultyMenu.java", "Line: 190 : " + St4);
                     DD = Integer.parseInt(St4);
+                    setDD(Integer.parseInt(St4));
                 } else {
                     Log.e("DifficultyMenu.java", "could not parse a group position when user selected a field");
                 }
@@ -184,67 +241,52 @@ public class DifficultyMenu extends AppCompatActivity {
                 while (true) {
                     /** determines if a difficulty has been selected for each of the math operations the user choose to practice **/
                     if (AddP && AChecked && !SubP && !MultiP && !DivisP) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 181");
                         WF();
                         break;
                     } else if (!AddP && SubP && SChecked && !MultiP && !DivisP) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 184");
                         WF();
                         break;
                     } else if (!AddP && !SubP && MultiP && MChecked && !DivisP) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 187");
                         WF();
                         break;
                     } else if (!AddP && !SubP && !MultiP && DivisP && DChecked) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 190");
                         WF();
                         break;
                     } else if (AddP && AChecked && SubP && SChecked && !MultiP && !DivisP) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 193");
                         WF();
                         break;
                     } else if (AddP && AChecked && !SubP && MultiP && MChecked && !DivisP) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 196");
                         WF();
                         break;
                     } else if (AddP && AChecked && !SubP && !MultiP && DivisP && DChecked) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 199");
                         WF();
                         break;
                     } else if (!AddP && SubP && SChecked && MultiP && MChecked && !DivisP) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 202");
                         WF();
                         break;
                     } else if (!AddP && SubP && SChecked && !MultiP && DivisP && DChecked) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 205");
                         WF();
                         break;
                     } else if (!AddP && !SubP && MultiP && MChecked && DivisP && DChecked) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 208");
                         WF();
                         break;
                     } else if (AddP && AChecked && SubP && SChecked && MultiP && MChecked && !DivisP) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 211");
                         WF();
                         break;
                     } else if (AddP && AChecked && SubP && SChecked && !MultiP && DivisP && DChecked) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 214");
                         WF();
                         break;
                     } else if (AddP && AChecked && !SubP && MultiP && MChecked && DivisP && DChecked) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 217");
                         WF();
                         break;
                     } else if (!AddP && SubP && SChecked && MultiP && MChecked && DivisP && DChecked) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 220");
                         WF();
                         break;
                     } else if (AddP && AChecked && SubP && SChecked && MultiP && MChecked && DivisP && DChecked) {
-                        Log.d("DifficultyMenu.java", "Success! Line: 223");
                         WF();
                         break;
                     } else {
-                        Log.e("DifficultyMenu.java", "Something went horribly wrong at line: 225");
+                        Log.e("DifficultyMenu.java", "Something went horribly wrong at line: 244");
                         break;
                     }
                 }
