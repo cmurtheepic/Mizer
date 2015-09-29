@@ -77,10 +77,10 @@ public class DifficultyMenu extends AppCompatActivity {
     private int T3;
     private int T4;
 
-    public int AD;
-    public int SD;
-    public int MD;
-    public int DD;
+    public int AD = 21;
+    public int SD = 21;
+    public int MD = 21;
+    public int DD = 21;
 
     public int getAD() {
         return AD;
@@ -207,8 +207,8 @@ public class DifficultyMenu extends AppCompatActivity {
                     getApplicationContext();
                     String St1 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
                     Log.d("DifficultyMenu.java", "Line: 171 : " + St1);
-                    AD = Integer.parseInt(St1);
-                    setAD(Integer.parseInt(St1));
+                    AD = Integer.parseInt(St1) + 1;
+                    setAD(Integer.parseInt(St1) + 1);
                     Log.d("DifficultyMenu.java", "Line: 173 : " + AD);
                 } else if (listDataHeader.get(groupPosition).equals("SubtractionDifficulty")) {
                     SChecked = true;
@@ -216,24 +216,24 @@ public class DifficultyMenu extends AppCompatActivity {
                     getApplicationContext();
                     String St2 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
                     Log.d("DifficultyMenu.java", "Line: 178 : " + St2);
-                    SD = Integer.parseInt(St2);
-                    setSD(Integer.parseInt(St2));
+                    SD = Integer.parseInt(St2) + 1;
+                    setSD(Integer.parseInt(St2) + 1);
                 } else if (listDataHeader.get(groupPosition).equals("MultiplicationDifficulty")) {
                     MChecked = true;
                     setMChecked(true);
                     getApplicationContext();
                     String St3 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
                     Log.d("DifficultyMenu.java", "Line: 184 : " + St3);
-                    MD = Integer.parseInt(St3);
-                    setMD(Integer.parseInt(St3));
+                    MD = Integer.parseInt(St3) + 1;
+                    setMD(Integer.parseInt(St3) + 1);
                 } else if (listDataHeader.get(groupPosition).equals("DivisionDifficulty")) {
                     DChecked = true;
                     setDChecked(true);
                     getApplicationContext();
                     String St4 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
                     Log.d("DifficultyMenu.java", "Line: 190 : " + St4);
-                    DD = Integer.parseInt(St4);
-                    setDD(Integer.parseInt(St4));
+                    DD = Integer.parseInt(St4) + 1;
+                    setDD(Integer.parseInt(St4) + 1);
                 } else {
                     Log.e("DifficultyMenu.java", "could not parse a group position when user selected a field");
                 }
@@ -286,7 +286,7 @@ public class DifficultyMenu extends AppCompatActivity {
                         WF();
                         break;
                     } else {
-                        Log.e("DifficultyMenu.java", "Something went horribly wrong at line: 244");
+                        Log.e("DifficultyMenu.java", "Something went horribly wrong at line: 289");
                         break;
                     }
                 }
