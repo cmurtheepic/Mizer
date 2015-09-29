@@ -13,6 +13,13 @@ import java.util.Random;
 
 public class BasicsPractice extends AppCompatActivity {
 
+    /** calls to make the class ProblemSelector usable in this class **/
+    @SuppressWarnings("unused")
+    private ProblemSelector PS = new ProblemSelector();
+
+    /** calls to make the class DifficultyMenu usable in this class **/
+    private DifficultyMenu DM = new DifficultyMenu();
+
     private TextView PO;
 
     private String B1;
@@ -32,28 +39,20 @@ public class BasicsPractice extends AppCompatActivity {
 
     private int Max1;
 
-    public int AD;
-    public int SD;
-    public int MD;
-    public int DD;
+    public int AD = DM.AD;
+    public int SD = DM.SD;
+    public int MD = DM.MD;
+    public int DD = DM.DD;
 
-    public boolean AddP = true;
-    public boolean SubP;
-    public boolean MultiP;
-    public boolean DivisP;
+    public boolean AddP = PS.AddProb;
+    public boolean SubP = PS.SubProb;
+    public boolean MultiP = PS.MultiProb;
+    public boolean DivisP = PS.DivisProb;
 
-    /** calls to make the class ProblemSelector usable in this class **/
-//    @SuppressWarnings("unused")
-//    private ProblemSelector PS = new ProblemSelector();
-
-    /** calls to make the class DifficultyMenu usable in this class **/
-//    @SuppressWarnings("unused")
-//    private DifficultyMenu DM = new DifficultyMenu();
-
-    public boolean AChecked;
-    public boolean SChecked;
-    public boolean MChecked;
-    public boolean DChecked;
+    public boolean AChecked = DM.AChecked;
+    public boolean SChecked = DM.SChecked;
+    public boolean MChecked = DM.MChecked;
+    public boolean DChecked = DM.DChecked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

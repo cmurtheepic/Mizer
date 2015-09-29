@@ -14,32 +14,26 @@ import android.widget.Toast;
 public class ProblemSelector extends AppCompatActivity {
 
     @SuppressWarnings("unused")
-    private boolean AddProb = true;
+    public boolean AddProb = false;
     @SuppressWarnings("unused")
-    private boolean SubProb;
+    public boolean SubProb = false;
     @SuppressWarnings("unused")
-    private boolean MultiProb;
+    public boolean MultiProb = false;
     @SuppressWarnings("unused")
-    private boolean DivisProb;
+    public boolean DivisProb = false;
 
     @SuppressWarnings("unused")
     public int ANum = 0;
     @SuppressWarnings("unused")
-    private int SNum;
+    public int SNum;
     @SuppressWarnings("unused")
-    private int MNum;
+    public int MNum;
     @SuppressWarnings("unused")
-    private int DNum;
+    public int DNum;
 
     /**
      * calls to make the class DifficultyMenu usable in this class
      **/
-    private final DifficultyMenu DM = new DifficultyMenu();
-
-    /**
-     * calls to make the class BasicsPractice usable in this class
-     **/
-    private final BasicsPractice BP = new BasicsPractice();
 
     private CheckBox checkbox1;
     private CheckBox checkbox2;
@@ -66,22 +60,15 @@ public class ProblemSelector extends AppCompatActivity {
                 Log.d("ProblemSelector.java", "Line: 47 : " + S);
                 if (b) {
                     @SuppressWarnings("UnusedAssignment") boolean AddProb = true;
-                    DM.AddP = true;
-                    BP.AddP = true;
                     Toast.makeText(getBaseContext(), "Addition: True", Toast.LENGTH_SHORT).show();
                     System.out.println("Addition: True");
                     Log.d("ProblemSelector.java", "AddProb did successfully change to true");
-                    Log.d("ProblemSelector", "DM.AddP = " + DM.AddP);
-                    Log.d("ProblemSelector", "BP.AddP = " + BP.AddP);
+                    Log.d("ProblemSelector.java","AddProb = " + AddProb);
                 } else {
                     @SuppressWarnings("UnusedAssignment") boolean AddProb = false;
-                    DM.AddP = false;
-                    BP.AddP = false;
                     Toast.makeText(getBaseContext(), "Addition: False", Toast.LENGTH_SHORT).show();
                     System.out.println("Addition: False");
                     Log.d("ProblemSelector.java", "AddProb did not successfully change to false");
-                    Log.d("ProblemSelector", "DM.AddP = " + DM.AddP);
-                    Log.d("ProblemSelector", "BP.AddP = " + BP.AddP);
                 }
             }
         });
@@ -94,8 +81,6 @@ public class ProblemSelector extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
                     @SuppressWarnings("UnusedAssignment") boolean SubProb = true;
-                    DM.SubP = true;
-                    BP.SubP = true;
                     Toast.makeText(getBaseContext(), "Subtraction: True", Toast.LENGTH_SHORT).show();
                     System.out.println("Subtraction: True");
                     Log.d("ProblemSelector.java", "SubProb did successfully change to true");
@@ -106,8 +91,6 @@ public class ProblemSelector extends AppCompatActivity {
                     }
                 } else {
                     @SuppressWarnings("UnusedAssignment") boolean SubProb = false;
-                    DM.SubP = false;
-                    BP.SubP = false;
                     Toast.makeText(getBaseContext(), "Subtraction: False", Toast.LENGTH_SHORT).show();
                     System.out.println("Subtraction: False");
                     Log.d("ProblemSelector.java", "SubProb did not successfully change to false");
@@ -123,8 +106,6 @@ public class ProblemSelector extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
                     @SuppressWarnings("UnusedAssignment") boolean MultiProb = true;
-                    DM.MultiP = true;
-                    BP.MultiP = true;
                     Toast.makeText(getBaseContext(), "Multiplication: True", Toast.LENGTH_SHORT).show();
                     System.out.println("Multiplication: True");
                     Log.d("ProblemSelector.java", "MultiProb did successfully change to true");
@@ -137,8 +118,6 @@ public class ProblemSelector extends AppCompatActivity {
                     }
                 } else {
                     @SuppressWarnings("UnusedAssignment") boolean MultiProb = false;
-                    DM.MultiP = false;
-                    BP.MultiP = false;
                     Toast.makeText(getBaseContext(), "Multiplication: False", Toast.LENGTH_SHORT).show();
                     System.out.println("Multiplication: False");
                     Log.d("ProblemSelector.java", "MultiProb did not successfully change to false");
@@ -155,8 +134,6 @@ public class ProblemSelector extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
                     @SuppressWarnings("UnusedAssignment") boolean DivisProb = true;
-                    DM.DivisP = true;
-                    BP.DivisP = true;
                     Toast.makeText(getBaseContext(), "Division: True", Toast.LENGTH_SHORT).show();
                     System.out.println("Division: True");
                     Log.d("ProblemSelector.java", "DivisProb did successfully change to true");
@@ -171,8 +148,6 @@ public class ProblemSelector extends AppCompatActivity {
                     }
                 } else {
                     @SuppressWarnings("UnusedAssignment") boolean DivisProb = false;
-                    DM.DivisP = false;
-                    BP.DivisP = false;
                     Toast.makeText(getBaseContext(), "Division: False", Toast.LENGTH_SHORT).show();
                     System.out.println("Division: False");
                     Log.d("ProblemSelector.java", "DivisProb did not successfully change to false");
@@ -207,10 +182,6 @@ public class ProblemSelector extends AppCompatActivity {
      * this is called when the user hits the continue button
      **/
     public void DifficultyMenu(View view) {
-        ANum = DM.ANum;
-        SNum = DM.SNum;
-        MNum = DM.MNum;
-        DNum = DM.DNum;
         String S1 = String.valueOf(AddProb);
         Log.d("ProblemSelector.java", "AddProb: " + S1);
         Intent DifficultyView = new Intent(this, DifficultyMenu.class);

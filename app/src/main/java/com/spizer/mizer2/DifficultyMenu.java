@@ -21,33 +21,33 @@ import android.widget.Toast;
 public class DifficultyMenu extends AppCompatActivity {
 
     /** calls to make the class ProblemSelector usable in this class **/
-//    @SuppressWarnings("unused")
-//    private ProblemSelector PS = new ProblemSelector();
+    @SuppressWarnings("unused")
+    private ProblemSelector PS = new ProblemSelector();
 
-    /** calls to make the class BasicsPractice usable un this class **/
-    @SuppressWarnings("CanBeFinal")
-    private BasicsPractice BP = new BasicsPractice();
-    Bundle B = getIntent().getExtras();
+    public boolean AChecked;
+    public boolean SChecked;
+    public boolean MChecked;
+    public boolean DChecked;
 
-    private boolean AChecked;
-    private boolean SChecked;
-    private boolean MChecked;
-    private boolean DChecked;
+    public boolean AddP = PS.AddProb;
+    public boolean SubP = PS.SubProb;
+    public boolean MultiP = PS.MultiProb;
+    public boolean DivisP = PS.DivisProb;
 
-    public boolean AddP;
-    public boolean SubP;
-    public boolean MultiP;
-    public boolean DivisP;
-
-    public int ANum;
-    public int SNum;
-    public int MNum;
-    public int DNum;
+    public int ANum = PS.ANum;
+    public int SNum = PS.SNum;
+    public int MNum = PS.MNum;
+    public int DNum = PS.DNum;
 
     private int T1;
     private int T2;
     private int T3;
     private int T4;
+
+    public int AD;
+    public int SD;
+    public int MD;
+    public int DD;
 
     @SuppressWarnings("unused")
     private int AddDiff;
@@ -154,33 +154,29 @@ public class DifficultyMenu extends AppCompatActivity {
                 /** also gives an error to debug console level if something unexpected has happened **/
                 if (listDataHeader.get(groupPosition).equals("AdditionDifficulty")) {
                     AChecked = true;
-                    BP.AChecked = true;
                     getApplicationContext();
                     String St1 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
-                    Log.d("DifficultyMenu.java", "Line: 145 : " + St1);
-                    BP.AD = Integer.parseInt(St1);
-                    Log.d("DifficultyMenu.java", "Line: 159 : " + AddDiff);
+                    Log.d("DifficultyMenu.java", "Line: 159 : " + St1);
+                    AD = Integer.parseInt(St1);
+                    Log.d("DifficultyMenu.java", "Line: 161 : " + AD);
                 } else if (listDataHeader.get(groupPosition).equals("SubtractionDifficulty")) {
                     SChecked = true;
-                    BP.SChecked = true;
                     getApplicationContext();
                     String St2 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
-                    Log.d("DifficultyMenu.java", "Line: 152 : " + St2);
-                    BP.SD = Integer.parseInt(St2);
+                    Log.d("DifficultyMenu.java", "Line: 166 : " + St2);
+                    SD = Integer.parseInt(St2);
                 } else if (listDataHeader.get(groupPosition).equals("MultiplicationDifficulty")) {
                     MChecked = true;
-                    BP.MChecked = true;
                     getApplicationContext();
                     String St3 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
-                    Log.d("DifficultyMenu.java", "Line: 159 : " + St3);
-                    BP.MD = Integer.parseInt(St3);
+                    Log.d("DifficultyMenu.java", "Line: 172 : " + St3);
+                    MD = Integer.parseInt(St3);
                 } else if (listDataHeader.get(groupPosition).equals("DivisionDifficulty")) {
                     DChecked = true;
-                    BP.DChecked = true;
                     getApplicationContext();
                     String St4 = listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition);
-                    Log.d("DifficultyMenu.java", "Line: 166 : " + St4);
-                    BP.DD = Integer.parseInt(St4);
+                    Log.d("DifficultyMenu.java", "Line: 178 : " + St4);
+                    DD = Integer.parseInt(St4);
                 } else {
                     Log.e("DifficultyMenu.java", "could not parse a group position when user selected a field");
                 }
