@@ -207,6 +207,10 @@ public class ProblemSelector extends AppCompatActivity {
      * this is called when the user hits the continue button
      **/
     public void DifficultyMenu(View view) {
+        ANum = DM.ANum;
+        SNum = DM.SNum;
+        MNum = DM.MNum;
+        DNum = DM.DNum;
         String S1 = String.valueOf(AddProb);
         Log.d("ProblemSelector.java", "AddProb: " + S1);
         Intent DifficultyView = new Intent(this, DifficultyMenu.class);

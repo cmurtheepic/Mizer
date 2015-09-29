@@ -27,6 +27,7 @@ public class DifficultyMenu extends AppCompatActivity {
     /** calls to make the class BasicsPractice usable un this class **/
     @SuppressWarnings("CanBeFinal")
     private BasicsPractice BP = new BasicsPractice();
+    Bundle B = getIntent().getExtras();
 
     private boolean AChecked;
     private boolean SChecked;
@@ -38,14 +39,10 @@ public class DifficultyMenu extends AppCompatActivity {
     public boolean MultiP;
     public boolean DivisP;
 
-    @SuppressWarnings("unused")
-    private int ANum;
-    @SuppressWarnings("unused")
-    private int SNum;
-    @SuppressWarnings("unused")
-    private int MNum;
-    @SuppressWarnings("unused")
-    private int DNum;
+    public int ANum;
+    public int SNum;
+    public int MNum;
+    public int DNum;
 
     private int T1;
     private int T2;
