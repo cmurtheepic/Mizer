@@ -212,6 +212,16 @@ public class BasicsPractice extends AppCompatActivity {
         S1 = s1;
     }
 
+    private boolean clicked;
+
+    public boolean getClicked() {
+        return clicked;
+    }
+
+    public void setClicked(boolean clicked) {
+        this.clicked = clicked;
+    }
+
     Handler Handler = new Handler();
 
     @Override
@@ -838,108 +848,144 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB1 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (getS1() == 0) {
+            if(getClicked()) {
+                if (getS1() == 0) {
                     C.setEnabled(true);
+                    setClicked(true);
                     Handler.postDelayed(Correct1, 1750);
                 } else {
                     IC.setEnabled(true);
+                    setClicked(true);
                     Handler.postDelayed(InCorrect1, 1750);
                 }
+            }
         }
     };
     View.OnClickListener myB2 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (getS1() == 1) {
-                C.setEnabled(true);
-                Handler.postDelayed(Correct1, 1750);
-            } else {
-                IC.setEnabled(true);
-                Handler.postDelayed(InCorrect1, 1750);
+            if(getClicked()) {
+                if (getS1() == 1) {
+                    C.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(Correct1, 1750);
+                } else {
+                    IC.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(InCorrect1, 1750);
+                }
             }
         }
     };
     View.OnClickListener myB3 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (getS1() == 2) {
-                C.setEnabled(true);
-                Handler.postDelayed(Correct1, 1750);
-            } else {
-                IC.setEnabled(true);
-                Handler.postDelayed(InCorrect1, 1750);
+            if(getClicked()) {
+                if (getS1() == 2) {
+                    C.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(Correct1, 1750);
+                } else {
+                    IC.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(InCorrect1, 1750);
+                }
             }
         }
     };
     View.OnClickListener myB4 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (getS1() == 3) {
-                C.setEnabled(true);
-                Handler.postDelayed(Correct1, 1750);
-            } else {
-                IC.setEnabled(true);
-                Handler.postDelayed(InCorrect1, 1750);
+            if(getClicked()) {
+                if (getS1() == 3) {
+                    C.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(Correct1, 1750);
+                } else {
+                    IC.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(InCorrect1, 1750);
+                }
             }
         }
     };
     View.OnClickListener myB5 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (getS1() == 4) {
-                C.setEnabled(true);
-                Handler.postDelayed(Correct1, 1750);
-            } else {
-                IC.setEnabled(true);
-                Handler.postDelayed(InCorrect1, 1750);
+            if(getClicked()) {
+                if (getS1() == 4) {
+                    C.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(Correct1, 1750);
+                } else {
+                    IC.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(InCorrect1, 1750);
+                }
             }
         }
     };
     View.OnClickListener myB6 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (getS1() == 5) {
-                C.setEnabled(true);
-                Handler.postDelayed(Correct1, 1750);
-            } else {
-                IC.setEnabled(true);
-                Handler.postDelayed(InCorrect1, 1750);
+            if(getClicked()) {
+                if (getS1() == 5) {
+                    C.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(Correct1, 1750);
+                } else {
+                    IC.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(InCorrect1, 1750);
+                }
             }
         }
     };
     View.OnClickListener myB7 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (getS1() == 6) {
-                C.setEnabled(true);
-                Handler.postDelayed(Correct1, 1750);
-            } else {
-                IC.setEnabled(true);
-                Handler.postDelayed(InCorrect1, 1750);
+            if(getClicked()) {
+                if (getS1() == 6) {
+                    C.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(Correct1, 1750);
+                } else {
+                    IC.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(InCorrect1, 1750);
+                }
             }
         }
     };
     View.OnClickListener myB8 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (getS1() == 7) {
-                C.setEnabled(true);
-                Handler.postDelayed(Correct1, 1750);
-            } else {
-                IC.setEnabled(true);
-                Handler.postDelayed(InCorrect1, 1750);
+            if(getClicked()) {
+                if (getS1() == 7) {
+                    C.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(Correct1, 1750);
+                } else {
+                    IC.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(InCorrect1, 1750);
+                }
             }
         }
     };
     View.OnClickListener myB9 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (getS1() == 8) {
-                C.setEnabled(true);
-                Handler.postDelayed(Correct1, 1750);
-            } else {
-                IC.setEnabled(true);
-                Handler.postDelayed(InCorrect1, 1750);
+            if(getClicked()) {
+                if (getS1() == 8) {
+                    setClicked(true);
+                    C.setEnabled(true);
+                    Handler.postDelayed(Correct1, 1750);
+                } else {
+                    IC.setEnabled(true);
+                    setClicked(true);
+                    Handler.postDelayed(InCorrect1, 1750);
+                }
             }
         }
     };
@@ -949,6 +995,7 @@ public class BasicsPractice extends AppCompatActivity {
         @Override
         public void run() {
             C.setEnabled(false);
+            setClicked(false);
             ScoreUpdate();
         }
     };
@@ -958,6 +1005,7 @@ public class BasicsPractice extends AppCompatActivity {
         @Override
         public void run() {
             IC.setEnabled(false);
+            setClicked(false);
             GenerateOperation();
         }
     };
