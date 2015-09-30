@@ -10,11 +10,11 @@ This Application is intended for educational purposes only.
 The purpose of this App is to help People practice their basic and complex math problem(s) through generating a problem,
 and displaying it to the User. Where the User then selects a answer from a set of 9 different supplied answer(s).
 through random selection the correct answer is shown on 1 of the 9 button(s) (selection(s)) and the rest are filled with
-incorrect answer(s). The selection is comprised of one correct answer, 1 or 2 trick question(s)****, 1 or 3 impossible answer(s)****,
-and maybe some negative answer(s)****, depending on the type of problem the application has generated for the User to solve.
+incorrect answer(s). The selection is comprised of one correct answer, 1 or 2 trick question(s)**, 1 or 3 impossible answer(s)**,
+and maybe some negative answer(s)**, depending on the type of problem the application has generated for the User to solve.
 Whether it be; Addition, Subtraction, Multiplication, Division problem(s), or Other*** problem(s). The Application gets
 the User(s) desired Difficulty for the Math problem(s) by having them select a number of (By Default) 1-10. but if the User
-desires a difficulty of greater than 1-10, then they may enter the desired difficulty for the math operations they wish to practice.****
+desires a difficulty of greater than 1-10, then they may enter the desired difficulty for the math operations they wish to practice.**
 For each of the Math Operation Problem(s) of course. Though you may also practice; Algebra, Geometry**, and Calculus**
 
 Anyone caught selling, distributing, renting any part of this Application that 
@@ -27,6 +27,5 @@ have the right to Sell, Distribute, Rent the Application under Agreement with th
 permission todo such things as stated before.
 
 * **ONLY
-* ** May not yet be a working (Functional) feature of the Application
+* ** May not yet be a working (Functional) feature of the Application or not enabled
 * ***Algebra, Geometry, and Calculus
-* **** Not Enabled
