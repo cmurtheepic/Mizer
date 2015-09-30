@@ -13,6 +13,7 @@ through random selection the correct answer is shown on 1 of the 9 button(s) (se
 incorrect answer(s). The selection is comprised of one correct answer,
 1 or 2 trick question(s)**
 , 1 or 3 impossible answer(s)**,
+
 and maybe some negative answer(s)**
 , depending on the type of problem the application has generated for the User to solve.
 Whether it be; Addition, Subtraction, Multiplication, Division problem(s), or Other*** problem(s). The Application gets
