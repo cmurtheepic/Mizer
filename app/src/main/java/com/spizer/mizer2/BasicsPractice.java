@@ -341,6 +341,7 @@ public class BasicsPractice extends AppCompatActivity {
                 AS1 = a1 + a2;
                 Output = a1 + " + " + a2;
                 Log.d("BasicsPractice.java", "the outputted problem was: " + Output);
+                if(AS1 < 0) { GenerateOperation(); }
                 if (getS1() == 0) {
                     B1 = Integer.toString(AS1);
                     B2 = Integer.toString((int) (Math.random() * DM.getAD() + DM.getAD()));
@@ -454,94 +455,94 @@ public class BasicsPractice extends AppCompatActivity {
 //                if(AS1 < 0) {GenerateOperation();}
                 if (getS1() == 0) {
                     B1 = Integer.toString(AS1);
-                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    if((int) (Math.random() * 2) == 1) {B2 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B2 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B3 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B3 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B4 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B4 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B5 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B5 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B6 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B6 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B7 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B7 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B8 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B8 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B9 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B9 = Integer.toString((int) (Math.random() * DM.getSD()));}
                 } else if (S1 == 1) {
                     B2 = Integer.toString(AS1);
-                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    if((int) (Math.random() * 2) == 1) {B3 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B1 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B4 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B3 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B5 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B4 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B6 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B5 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B7 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B6 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B8 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B7 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B9 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B8 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B1 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B9 = Integer.toString((int) (Math.random() * DM.getSD()));}
                 } else if (S1 == 2) {
                     B3 = Integer.toString(AS1);
-                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    if((int) (Math.random() * 2) == 1) {B4 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B1 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B5 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B2 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B6 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B4 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B7 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B5 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B8 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B6 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B9 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B7 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B1 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B8 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B2 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B9 = Integer.toString((int) (Math.random() * DM.getSD()));}
                 } else if (S1 == 3) {
                     B4 = Integer.toString(AS1);
-                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    if((int) (Math.random() * 2) == 1) {B5 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B5 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B6 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B6 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B7 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B7 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B8 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B8 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B9 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B9 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B1 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B1 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B2 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B2 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B3 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B3 = Integer.toString((int) (Math.random() * DM.getSD()));}
                 } else if (S1 == 4) {
                     B5 = Integer.toString(AS1);
-                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    if((int) (Math.random() * 2) == 1) {B6 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B6 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B7 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B7 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B8 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B8 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B9 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B9 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B1 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B1 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B2 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B2 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B3 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B3 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B4 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B4 = Integer.toString((int) (Math.random() * DM.getSD()));}
                 } else if (S1 == 5) {
                     B6 = Integer.toString(AS1);
-                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    if((int) (Math.random() * 2) == 1) {B7 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B1 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B8 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B2 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B9 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B3 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B1 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B4 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B2 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B5 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B3 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B7 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B4 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B8 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B5 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B9 = Integer.toString((int) (Math.random() * DM.getSD()));}
                 } else if (S1 == 6) {
                     B7 = Integer.toString(AS1);
-                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    if((int) (Math.random() * 2) == 1) {B8 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B1 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B9 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B2 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B1 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B3 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B2 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B4 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B3 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B5 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B4 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B6 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B5 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B8 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B6 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B9 = Integer.toString((int) (Math.random() * DM.getSD()));}
                 } else if (S1 == 7) {
                     B8 = Integer.toString(AS1);
-                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    if((int) (Math.random() * 2) == 1) {B9 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B1 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B1 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B2 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B2 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B3 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B3 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B4 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B4 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B5 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B5 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B6 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B6 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B7 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B7 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B9 = Integer.toString((int) (Math.random() * DM.getSD()));}
                 } else if (S1 == 8) {
                     B9 = Integer.toString(AS1);
-                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
-                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    if((int) (Math.random() * 2) == 1) {B1 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B1 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B2 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B2 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B3 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B3 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B4 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B4 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B5 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B5 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B6 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B6 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B7 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B7 = Integer.toString((int) (Math.random() * DM.getSD()));}
+                    if((int) (Math.random() * 2) == 1) {B8 = "-" + Integer.toString((int) (Math.random() * DM.getSD()));} else {B8 = Integer.toString((int) (Math.random() * DM.getSD()));}
                 } else {
                     Log.e("BasicsPractice.java", "Something went horribly wrong on line : 160-181");
                 }
@@ -669,6 +670,8 @@ public class BasicsPractice extends AppCompatActivity {
                 int d2 = d8.intValue();
                 AS1 = d1 / d2;
                 Output = d1 + " / " + d2;
+                if(AS1 < 0) { GenerateOperation(); }
+                if(d2 > d1) { GenerateOperation(); }
                 if (getS1() == 0) {
                     B1 = Integer.toString(AS1);
                     B2 = Integer.toString((int) (Math.random() * DM.getDD()));
