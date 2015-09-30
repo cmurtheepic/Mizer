@@ -61,8 +61,7 @@ public class DifficultyMenu extends AppCompatActivity {
         this.DChecked = DChecked;
     }
 
-//    public boolean AddP = PS.getAddProb();
-    public boolean AddP = true;
+    public boolean AddP = PS.getAddProb();
     public boolean SubP = PS.getSubProb();
     public boolean MultiP = PS.getMultiProb();
     public boolean DivisP = PS.getDivisProb();

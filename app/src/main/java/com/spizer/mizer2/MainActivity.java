@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     /** unless it was the first time starting the app **/
     public void MPS(View view) {
         if (!PreviousSession) {
-            Intent OpenMPS = new Intent(this, MathProblemSelector.class);
+            Intent OpenMPS = new Intent(this, BasicsPractice.class);
             startActivity(OpenMPS);
         } else {
             System.out.println("Something when terribly wrong at line: 45");

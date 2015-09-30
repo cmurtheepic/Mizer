@@ -63,7 +63,7 @@
             android:id="@+id/button1"
             android:layout_row="3"
             android:layout_column="0"
-            android:textSize="60sp" />
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="110dp"
@@ -72,7 +72,7 @@
             android:id="@+id/button2"
             android:layout_row="3"
             android:layout_column="1"
-            android:textSize="60sp" />
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="110dp"
@@ -81,7 +81,7 @@
             android:id="@+id/button3"
             android:layout_row="3"
             android:layout_column="2"
-            android:textSize="60sp"
+            android:textSize="20sp"
             android:onClick="onClick"/>
 
         <Button
@@ -91,7 +91,7 @@
             android:id="@+id/button4"
             android:layout_row="4"
             android:layout_column="0"
-            android:textSize="60sp" />
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="110dp"
@@ -100,7 +100,7 @@
             android:id="@+id/button5"
             android:layout_row="4"
             android:layout_column="1"
-            android:textSize="60sp" />
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="110dp"
@@ -109,7 +109,7 @@
             android:id="@+id/button6"
             android:layout_row="4"
             android:layout_column="2"
-            android:textSize="60sp" />
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="110dp"
@@ -118,7 +118,7 @@
             android:id="@+id/button7"
             android:layout_row="5"
             android:layout_column="0"
-            android:textSize="60sp" />
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="110dp"
@@ -127,7 +127,7 @@
             android:id="@+id/button8"
             android:layout_row="5"
             android:layout_column="1"
-            android:textSize="60sp" />
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="110dp"
@@ -136,7 +136,7 @@
             android:id="@+id/button9"
             android:layout_row="5"
             android:layout_column="2"
-            android:textSize="60sp" />
+            android:textSize="20sp" />
 
     </GridLayout>
 

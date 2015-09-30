@@ -128,7 +128,7 @@ public class BasicsPractice extends AppCompatActivity {
     @SuppressWarnings("unused")
     private Random r;
 
-    private int Max1 = 1;
+    private int Max1 = 4;
 
     public int AD = DM.getAD();
     public int SD = DM.getSD();
@@ -330,26 +330,97 @@ public class BasicsPractice extends AppCompatActivity {
                 Log.d("BasicsPractice.java", "the second Addition number generated was: " + a2);
                 AS1 = a1 + a2;
                 Output = a1 + " + " + a2;
-                FillButtons();
                 Log.d("BasicsPractice.java", "the outputted problem was: " + Output);
                 if (getS1() == 0) {
                     B1 = Integer.toString(AS1);
+                    B2 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getAD()));
                 } else if (S1 == 1) {
                     B2 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getAD()));
                 } else if (S1 == 2) {
                     B3 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getAD()));
                 } else if (S1 == 3) {
                     B4 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getAD()));
                 } else if (S1 == 4) {
                     B5 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getAD()));
                 } else if (S1 == 5) {
                     B6 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getAD()));
                 } else if (S1 == 6) {
                     B7 = Integer.toString(AS1);
+                    B9 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getAD()));
                 } else if (S1 == 7) {
                     B8 = Integer.toString(AS1);
+                    B9 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getAD()));
                 } else if (S1 == 8) {
                     B9 = Integer.toString(AS1);
+                    B8 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getAD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getAD()));
                 } else {
                     Log.e("BasicsPractice.java", "Something went horribly wrong on line : 160-181");
                 }
@@ -370,27 +441,98 @@ public class BasicsPractice extends AppCompatActivity {
                 int s2 = d6.intValue();
                 AS1 = s1 - s2;
                 Output = s1 + " - " + s2;
-                FillButtons();
                 if (getS1() == 0) {
                     B1 = Integer.toString(AS1);
+                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
                 } else if (S1 == 1) {
                     B2 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
                 } else if (S1 == 2) {
                     B3 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
                 } else if (S1 == 3) {
                     B4 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
                 } else if (S1 == 4) {
                     B5 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
                 } else if (S1 == 5) {
                     B6 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
                 } else if (S1 == 6) {
                     B7 = Integer.toString(AS1);
+                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
                 } else if (S1 == 7) {
                     B8 = Integer.toString(AS1);
+                    B9 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
                 } else if (S1 == 8) {
                     B9 = Integer.toString(AS1);
+                    B8 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getSD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getSD()));
                 } else {
-                    Log.e("BasicsPractice.java", "Something went horribly wrong on line : 196-217");
+                    Log.e("BasicsPractice.java", "Something went horribly wrong on line : 160-181");
                 }
                 OutputToAnswerSelection();
                 OutputToProblemView();
@@ -407,27 +549,98 @@ public class BasicsPractice extends AppCompatActivity {
                 int m2 = d7.intValue();
                 AS1 = m1 * m2;
                 Output = m1 + " * " + m2;
-                FillButtons();
                 if (getS1() == 0) {
                     B1 = Integer.toString(AS1);
+                    B2 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getMD()));
                 } else if (S1 == 1) {
                     B2 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getMD()));
                 } else if (S1 == 2) {
                     B3 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getMD()));
                 } else if (S1 == 3) {
                     B4 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getMD()));
                 } else if (S1 == 4) {
                     B5 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getMD()));
                 } else if (S1 == 5) {
                     B6 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getMD()));
                 } else if (S1 == 6) {
                     B7 = Integer.toString(AS1);
+                    B9 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getMD()));
                 } else if (S1 == 7) {
                     B8 = Integer.toString(AS1);
+                    B9 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getMD()));
                 } else if (S1 == 8) {
                     B9 = Integer.toString(AS1);
+                    B8 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getMD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getMD()));
                 } else {
-                    Log.e("BasicsPractice.java", "Something went horribly wrong on line : 232-253");
+                    Log.e("BasicsPractice.java", "Something went horribly wrong on line : 160-181");
                 }
                 OutputToAnswerSelection();
                 OutputToProblemView();
@@ -444,30 +657,100 @@ public class BasicsPractice extends AppCompatActivity {
                 int d2 = d8.intValue();
                 AS1 = d1 / d2;
                 Output = d1 + " / " + d2;
-                FillButtons();
                 if (getS1() == 0) {
                     B1 = Integer.toString(AS1);
+                    B2 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getDD()));
                 } else if (S1 == 1) {
                     B2 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getDD()));
                 } else if (S1 == 2) {
                     B3 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getDD()));
                 } else if (S1 == 3) {
                     B4 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getDD()));
                 } else if (S1 == 4) {
                     B5 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getDD()));
                 } else if (S1 == 5) {
                     B6 = Integer.toString(AS1);
+                    B1 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B9 = Integer.toString((int) (Math.random() * DM.getDD()));
                 } else if (S1 == 6) {
                     B7 = Integer.toString(AS1);
+                    B9 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B8 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getDD()));
                 } else if (S1 == 7) {
                     B8 = Integer.toString(AS1);
+                    B9 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getDD()));
                 } else if (S1 == 8) {
                     B9 = Integer.toString(AS1);
+                    B8 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B7 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B6 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B5 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B4 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B3 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B2 = Integer.toString((int) (Math.random() * DM.getDD()));
+                    B1 = Integer.toString((int) (Math.random() * DM.getDD()));
                 } else {
-                    Log.e("BasicsPractice.java", "Something went horribly wrong on line : 268-289");
+                    Log.e("BasicsPractice.java", "Something went horribly wrong on line : 160-181");
                 }
-                Log.d("BasicsPractice.java", "the button number is : " + S1 + 1);
-                Log.d("BasicsPractice.java", "the button output is : " + AS1);
+                OutputToAnswerSelection();
                 OutputToProblemView();
             }
         }
@@ -682,361 +965,6 @@ public class BasicsPractice extends AppCompatActivity {
         setScore(getScore()+1);
         S.setText(Integer.toString(getScore()));
         GenerateOperation();
-    }
-
-    /** this fills the rest of the buttons with random answers **/
-    private void FillButtons() {
-        if(getAddProbT()) {
-            switch (SS1) {
-                case 0:
-                    if(getS1() != 0) {
-                        B1 = Integer.toString((int) (Math.random() * DM.getAD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 1:
-                    if(getS1() != 0) {
-                        B2 = Integer.toString((int) (Math.random() * DM.getAD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 2:
-                    if(getS1() != 0) {
-                        B3 = Integer.toString((int) (Math.random() * DM.getAD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 3:
-                    if(getS1() != 0) {
-                        B4 = Integer.toString((int) (Math.random() * DM.getAD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 4:
-                    if(getS1() != 0) {
-                        B5 = Integer.toString((int) (Math.random() * DM.getAD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 5:
-                    if(getS1() != 0) {
-                        B6 = Integer.toString((int) (Math.random() * DM.getAD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 6:
-                    if(getS1() != 0) {
-                        B7 = Integer.toString((int) (Math.random() * DM.getAD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 7:
-                    if(getS1() != 0) {
-                        B8 = Integer.toString((int) (Math.random() * DM.getAD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 8:
-                    if(getS1() != 0) {
-                        B9 = Integer.toString((int) (Math.random() * DM.getAD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 9:
-                    setSS1(0);
-                    OutputToAnswerSelection();
-            }
-        } else if(getSubProbT()) {
-            switch (SS1) {
-                case 0:
-                    if(getS1() != 0) {
-                        B1 = Integer.toString((int) (Math.random() * DM.getSD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 1:
-                    if(getS1() != 0) {
-                        B2 = Integer.toString((int) (Math.random() * DM.getSD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 2:
-                    if(getS1() != 0) {
-                        B3 = Integer.toString((int) (Math.random() * DM.getSD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 3:
-                    if(getS1() != 0) {
-                        B4 = Integer.toString((int) (Math.random() * DM.getSD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 4:
-                    if(getS1() != 0) {
-                        B5 = Integer.toString((int) (Math.random() * DM.getSD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 5:
-                    if(getS1() != 0) {
-                        B6 = Integer.toString((int) (Math.random() * DM.getSD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 6:
-                    if(getS1() != 0) {
-                        B7 = Integer.toString((int) (Math.random() * DM.getSD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 7:
-                    if(getS1() != 0) {
-                        B8 = Integer.toString((int) (Math.random() * DM.getSD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 8:
-                    if(getS1() != 0) {
-                        B9 = Integer.toString((int) (Math.random() * DM.getSD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 9:
-                    setSS1(0);
-                    OutputToAnswerSelection();
-            }
-        } else if(getMultiProbT()) {
-            switch (SS1) {
-                case 0:
-                    if(getS1() != 0) {
-                        B1 = Integer.toString((int) (Math.random() * DM.getMD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 1:
-                    if(getS1() != 0) {
-                        B2 = Integer.toString((int) (Math.random() * DM.getMD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 2:
-                    if(getS1() != 0) {
-                        B3 = Integer.toString((int) (Math.random() * DM.getMD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 3:
-                    if(getS1() != 0) {
-                        B4 = Integer.toString((int) (Math.random() * DM.getMD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 4:
-                    if(getS1() != 0) {
-                        B5 = Integer.toString((int) (Math.random() * DM.getMD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 5:
-                    if(getS1() != 0) {
-                        B6 = Integer.toString((int) (Math.random() * DM.getMD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 6:
-                    if(getS1() != 0) {
-                        B7 = Integer.toString((int) (Math.random() * DM.getMD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 7:
-                    if(getS1() != 0) {
-                        B8 = Integer.toString((int) (Math.random() * DM.getMD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 8:
-                    if(getS1() != 0) {
-                        B9 = Integer.toString((int) (Math.random() * DM.getMD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 9:
-                    setSS1(0);
-                    OutputToAnswerSelection();
-            }
-        } else if(getDivisProbT()) {
-            switch (SS1) {
-                case 0:
-                    if(getS1() != 0) {
-                        B1 = Integer.toString((int) (Math.random() * DM.getDD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 1:
-                    if(getS1() != 0) {
-                        B2 = Integer.toString((int) (Math.random() * DM.getDD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 2:
-                    if(getS1() != 0) {
-                        B3 = Integer.toString((int) (Math.random() * DM.getDD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 3:
-                    if(getS1() != 0) {
-                        B4 = Integer.toString((int) (Math.random() * DM.getDD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 4:
-                    if(getS1() != 0) {
-                        B5 = Integer.toString((int) (Math.random() * DM.getDD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 5:
-                    if(getS1() != 0) {
-                        B6 = Integer.toString((int) (Math.random() * DM.getDD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 6:
-                    if(getS1() != 0) {
-                        B7 = Integer.toString((int) (Math.random() * DM.getDD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 7:
-                    if(getS1() != 0) {
-                        B8 = Integer.toString((int) (Math.random() * DM.getDD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 8:
-                    if(getS1() != 0) {
-                        B9 = Integer.toString((int) (Math.random() * DM.getDD()));
-                        setSS1(++SS1);
-                        FillButtons();
-                    } else {
-                        setSS1(++SS1);
-                        FillButtons();
-                    }
-                case 9:
-                    setSS1(0);
-                    OutputToAnswerSelection();
-            }
-        } else {
-            Log.e("BasicsPractice.java","Something went horribly wrong at lines: 687-697");
-        }
     }
 
 }

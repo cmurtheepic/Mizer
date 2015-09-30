@@ -14,9 +14,9 @@ import android.widget.Toast;
 public class ProblemSelector extends AppCompatActivity {
 
     public boolean AddProb = true;
-    public boolean SubProb;
-    public boolean MultiProb;
-    public boolean DivisProb;
+    public boolean SubProb = true;
+    public boolean MultiProb = true;
+    public boolean DivisProb = true;
 
     public boolean getAddProb() {
         return AddProb;
@@ -53,11 +53,11 @@ public class ProblemSelector extends AppCompatActivity {
     @SuppressWarnings("unused")
     public int ANum = 0;
     @SuppressWarnings("unused")
-    public int SNum;
+    public int SNum = 1;
     @SuppressWarnings("unused")
-    public int MNum;
+    public int MNum = 2;
     @SuppressWarnings("unused")
-    public int DNum;
+    public int DNum = 3;
 
     public int getANum() {
         return ANum;
@@ -111,11 +111,11 @@ public class ProblemSelector extends AppCompatActivity {
                 String S = String.valueOf(b);
                 Log.d("ProblemSelector.java", "Line: 47 : " + S);
                 if (b) {
-                    AddProb = true;
+//                    AddProb = true;
                     setAddProb(true);
                     Toast.makeText(getBaseContext(), "Addition: True", Toast.LENGTH_SHORT).show();
                 } else {
-                    AddProb = false;
+//                    AddProb = false;
                     setAddProb(false);
                     Toast.makeText(getBaseContext(), "Addition: False", Toast.LENGTH_SHORT).show();
                 }
@@ -129,7 +129,7 @@ public class ProblemSelector extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
-                    SubProb = true;
+//                    SubProb = true;
                     setSubProb(true);
                     Toast.makeText(getBaseContext(), "Subtraction: True", Toast.LENGTH_SHORT).show();
                     if (!AddProb) {
@@ -140,7 +140,7 @@ public class ProblemSelector extends AppCompatActivity {
                         setSNum(1);
                     }
                 } else {
-                    SubProb = false;
+//                    SubProb = false;
                     setSubProb(false);
                     Toast.makeText(getBaseContext(), "Subtraction: False", Toast.LENGTH_SHORT).show();
                 }
@@ -154,7 +154,7 @@ public class ProblemSelector extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
-                    MultiProb = true;
+//                    MultiProb = true;
                     setMultiProb(true);
                     Toast.makeText(getBaseContext(), "Multiplication: True", Toast.LENGTH_SHORT).show();
                     if (!AddProb && !SubProb) {
@@ -168,7 +168,7 @@ public class ProblemSelector extends AppCompatActivity {
                         setMNum(2);
                     }
                 } else {
-                    MultiProb = false;
+//                    MultiProb = false;
                     setMultiProb(false);
                     Toast.makeText(getBaseContext(), "Multiplication: False", Toast.LENGTH_SHORT).show();
                 }
@@ -183,7 +183,7 @@ public class ProblemSelector extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
-                    DivisProb = true;
+//                    DivisProb = true;
                     setDivisProb(true);
                     Toast.makeText(getBaseContext(), "Division: True", Toast.LENGTH_SHORT).show();
                     if (!AddProb && !SubProb && !MultiProb) {
@@ -200,7 +200,7 @@ public class ProblemSelector extends AppCompatActivity {
                         setDNum(3);
                     }
                 } else {
-                    DivisProb = false;
+//                    DivisProb = false;
                     setDivisProb(false);
                     Toast.makeText(getBaseContext(), "Division: False", Toast.LENGTH_SHORT).show();
                 }
@@ -234,6 +234,7 @@ public class ProblemSelector extends AppCompatActivity {
      * this is called when the user hits the continue button
      **/
     public void DifficultyMenu(View view) {
+        Log.d("ProblemSelector.java","the value of ANum = " + getANum() + " : the value of SNum = " + getSNum());
         Log.d("ProblemSelector.java", "the value of AddProb = " + AddProb + " : the value of SubProb = " + SubProb + " : the value of MultiProb = " + MultiProb + " : the value of DivisProb = " + DivisProb);
         Intent DifficultyView = new Intent(this, DifficultyMenu.class);
         startActivity(DifficultyView);
