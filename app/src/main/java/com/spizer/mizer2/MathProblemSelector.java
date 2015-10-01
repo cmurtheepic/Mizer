@@ -39,7 +39,7 @@ public class MathProblemSelector extends AppCompatActivity {
 
     /** called when the user clicks the BASICS button **/
     public void Basics(View view) {
-        Intent BasicView = new Intent(this, ProblemSelector.class);
+        Intent BasicView = new Intent(this, BasicsPractice.class);
         startActivity(BasicView);
     }
 
