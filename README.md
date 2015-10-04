@@ -7,6 +7,8 @@ This peice of intellectual property was thought up on September, 9, 2015 at 3:50
 
 This Application is intended for educational purposes only.
 
+You can become a alpha tester here: https://play.google.com/apps/testing/com.spizer.mizer2
+
 The purpose of this App is to help People practice their basic and complex math problem(s) through generating a problem,
 and displaying it to the User. Where the User then selects a answer from a set of 9 different supplied answer(s).
 through random selection the correct answer is shown on 1 of the 9 button(s) (selection(s)) and the rest are filled with
