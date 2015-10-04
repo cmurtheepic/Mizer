@@ -9,6 +9,24 @@ android {
             storeFile file('C:/Users/connor/keystores/android.jks')
             storePassword 'Marshmallow'
         }
+        DebugBeta {
+            keyAlias 'coconutdebug-beta'
+            keyPassword 'Arcadia'
+            storeFile file('C:/Users/connor/keystores/coconutdebug-betaKey.keystore')
+            storePassword 'Arcadia'
+        }
+        DebugAlpha {
+            keyAlias 'coconutdebug-alpha'
+            keyPassword 'Salamander'
+            storeFile file('C:/Users/connor/keystores/coconutdebug-alphaKey.keystore')
+            storePassword 'Salamander'
+        }
+        Release {
+            keyAlias 'kaptain'
+            keyPassword 'Marshmallow'
+            storeFile file('C:/Users/connor/keystores/new-kaptain.keystore')
+            storePassword 'Marshmallow'
+        }
     }
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
@@ -23,17 +41,32 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
+            signingConfig signingConfigs.Release
+        }
+        debugbeta {
+            debuggable false
+            jniDebuggable false
+            signingConfig signingConfigs.DebugBeta
+            renderscriptDebuggable false
+            minifyEnabled false
+            zipAlignEnabled true
+        }
+        debugalpha {
+            debuggable false
+            jniDebuggable false
+            signingConfig signingConfigs.DebugAlpha
+            renderscriptDebuggable false
+            minifyEnabled false
+            zipAlignEnabled true
         }
     }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.android.gms:play-services-analytics:8.1.0'
     compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.google.android.gms:play-services-ads:7.3.0'
-    compile 'com.google.android.gms:play-services-analytics:7.3.0'
-    compile 'com.google.android.gms:play-services-identity:7.3.0'
-    compile 'com.google.android.gms:play-services-gcm:7.3.0'
-    compile 'com.google.android.gms:play-services-analytics:7.3.0'
+    compile 'com.google.android.gms:play-services-ads:8.1.0'
+    compile 'com.google.android.gms:play-services-identity:8.1.0'
+    compile 'com.google.android.gms:play-services-gcm:8.1.0'
 }
