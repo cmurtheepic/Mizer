@@ -114,3 +114,33 @@ Affirmer's express Statement of Purpose.
 
 For more information, please see
 <http://creativecommons.org/publicdomain/zero/1.0/>
+
+Guidlines For Permitted Use.
+
+* Means Of Permitted Use
+
+The Following, are Permitted uses of the rightful Owner(s) Assets/Property, In tandom with the Owner(s) Guidlines of use.
+      a) Education Purposes
+            * Such as use in Public School(s), Private School(s), or for Personal / Self-Education, 
+            * and/or other means of educational use that were not defined but approved by the rightful Owner(s),
+            * with written consent (and/or) other means of documentation of approval.
+            * The full depth of the guidelines for Educational Purposes can be found in the
+            * EDUCATIONAL LICENSE.md file here : 
+           
+      or     
+            
+      b) Reference Material
+            * Such as using the Owner(s) Assets/Property as Reference for personal endeavors.
+            * Though the Owner(s) must be consulted on whether a document stating the written
+            * consent / approval of the rightful Owner(s) is necessary.
+            
+      or      
+            
+      c) Comercial Training Purposes
+            * Such as using the Owner(s) Assets/Property to help
+            * Though the Owner(s) must be consulted on whether the Entity(s)'s Comercial Training Purpose(s) is an approved
+            * (and/or) viable Endeavor for all parties involved. And for the Owner(s) of the Work(s)/Asset(s)/Property in               * question to issue a legal document stating the written consent / approval of the rightful Owner(s).
+      
+----------------------------------------------------------------------------------------------------------------------------
+The Following are Non-Permitted uses of the rightful Owner(s)
+Any other mean(s) of Use must be approved by the rightful Owner, and have written documentation by all party(ies) and/or entity(s) of written Approval and Consent. As well as strict guidlines of what the party(ies) and/or entity(s) may use the Owners Property for, or what the 
