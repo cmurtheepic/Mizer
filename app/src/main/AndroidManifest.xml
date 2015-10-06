@@ -12,7 +12,7 @@
         android:label="Mizer"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Start.MainActivity"
+            android:name=".MainActivity"
             android:label="Mizer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +23,10 @@
         <activity
             android:name=".Start.SessionMenuActivity"
             android:label="Mizer"
-            android:parentActivityName=".Start.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".basics.DifficultyMenu"
@@ -34,15 +34,15 @@
             android:parentActivityName=".basics.ProblemSelector" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".otherclasses.NotWorking"
             android:label="Mizer"
-            android:parentActivityName=".Start.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".basics.ProblemSelector"
@@ -50,7 +50,7 @@
             android:parentActivityName=".Start.MathProblemSelector" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".basics.BasicsPractice"
@@ -59,12 +59,12 @@
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".Start.MathProblemSelector"
             android:label="@string/title_activity_math_problem_selector"
-            android:parentActivityName=".Start.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Start.SessionMenuActivity" />

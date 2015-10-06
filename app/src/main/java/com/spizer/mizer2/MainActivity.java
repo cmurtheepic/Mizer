@@ -1,23 +1,33 @@
-package com.spizer.mizer2.Start;
+package com.spizer.mizer2;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.gms.analytics.Tracker;
+import com.spizer.mizer2.Start.MathProblemSelector;
 import com.spizer.mizer2.otherclasses.NotWorking;
-import com.spizer.mizer2.R;
+import com.spizer.mizer2.utilityclasses.AnalyticsApplication;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     public boolean PreviousSession = false;
+
+    /**
+     * The {@link Tracker} used to record screen views.
+     */
+    private Tracker mTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        AnalyticsApplication application = (AnalyticsApplication) getApplication();
+        mTracker = application.getDefaultTracker();
     }
 
     @Override
