@@ -41,4 +41,3 @@ The Developer. And that these entity(s) have Documents; in written agreement or 
 The guidelines for which is aceptable use of The Determined Assets by The Developer are outlined here, 
 Under Guildlines Of Permitted Use, as well as the guidelines for proper use, stated by the Creative Commons Zero v1.0 Unversal section are also contained in the LICENSE.md file in the first part of the document.
 You cand find this document here : https://github.com/cmurtheepic/Mizer/blob/master/LICENSE.md
-
