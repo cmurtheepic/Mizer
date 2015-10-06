@@ -1,4 +1,4 @@
-package com.spizer.mizer2;
+package com.spizer.mizer2.start;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.spizer.mizer2.R;
+import com.spizer.mizer2.Basics.BasicsPractice;
 
 public class MathProblemSelector extends AppCompatActivity {
 

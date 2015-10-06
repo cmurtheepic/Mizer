@@ -1,4 +1,4 @@
-package com.spizer.mizer2;
+package com.spizer.mizer2.start;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,18 +7,23 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class SessionMenuActivity extends AppCompatActivity {
+import com.spizer.mizer2.otherclasses.NotWorking;
+import com.spizer.mizer2.R;
+
+public class MainActivity extends AppCompatActivity {
+
+    public boolean PreviousSession = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_session_menu);
+        setContentView(R.layout.activity_main);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_session_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -37,17 +42,16 @@ public class SessionMenuActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /** called when the user clicks the START SESSION button **/
-    public void ProblemSelectorMenu(View view) {
-        Intent OpenProblemSelectorMenu = new Intent(this, ProblemSelector.class);
-        startActivity(OpenProblemSelectorMenu);
+    /** called when the user clicks the START button **/
+    /** unless it was the first time starting the app **/
+    public void MPS(View view) {
+        if (!PreviousSession) {
+            Intent OpenMPS = new Intent(this, MathProblemSelector.class);
+            startActivity(OpenMPS);
+        } else {
+            System.out.println("Something when terribly wrong at line: 45");
+        }
     }
-
-    /** called when the user clicks the RESUME PREVIOUS SESSION button **/
-   /** public void ResumePreviousSession(View view) {
-   *     Intent ResumeSession = new Intent(this, PreviousSession.class);
-   *     startActivity(ResumeSession);
-    } **/
 
     /** called when the user clicks a button for a feature that currently does not exist in the
      * application or that currently does not work

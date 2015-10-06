@@ -1,4 +1,4 @@
-package com.spizer.mizer2;
+package com.spizer.mizer2.otherclasses;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,9 +6,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageSwitcher;
+
+import com.spizer.mizer2.R;
+import com.spizer.mizer2.start.SessionMenuActivity;
 
 public class NotWorking extends AppCompatActivity {
 

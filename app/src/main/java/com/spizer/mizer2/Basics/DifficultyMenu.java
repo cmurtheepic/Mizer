@@ -1,4 +1,4 @@
-package com.spizer.mizer2;
+package com.spizer.mizer2.Basics;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +17,9 @@ import android.widget.ExpandableListView.OnGroupClickListener;
 import android.widget.ExpandableListView.OnGroupCollapseListener;
 import android.widget.ExpandableListView.OnGroupExpandListener;
 import android.widget.Toast;
+
+import com.spizer.mizer2.R;
+import com.spizer.mizer2.utilityclasses.ExpandableListAdapter;
 
 public class DifficultyMenu extends AppCompatActivity {
 
