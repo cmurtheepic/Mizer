@@ -12,7 +12,7 @@
         android:label="Mizer"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".Start.MainActivity"
             android:label="Mizer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,53 +21,53 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SessionMenuActivity"
+            android:name=".Start.SessionMenuActivity"
             android:label="Mizer"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".Start.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.spizer.mizer2.MainActivity" />
+                android:value=".Start.MainActivity" />
         </activity>
         <activity
-            android:name=".DifficultyMenu"
+            android:name=".basics.DifficultyMenu"
             android:label="Mizer"
-            android:parentActivityName=".ProblemSelector" >
+            android:parentActivityName=".basics.ProblemSelector" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.spizer.mizer2.MainActivity" />
+                android:value=".Start.MainActivity" />
         </activity>
         <activity
-            android:name=".NotWorking"
+            android:name=".otherclasses.NotWorking"
             android:label="Mizer"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".Start.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.spizer.mizer2.MainActivity" />
+                android:value=".Start.MainActivity" />
         </activity>
         <activity
-            android:name=".ProblemSelector"
+            android:name=".basics.ProblemSelector"
             android:label="Mizer"
-            android:parentActivityName=".MathProblemSelector" >
+            android:parentActivityName=".Start.MathProblemSelector" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.spizer.mizer2.MainActivity" />
+                android:value=".Start.MainActivity" />
         </activity>
         <activity
-            android:name=".BasicsPractice"
+            android:name=".basics.BasicsPractice"
             android:label="@string/title_activity_basics_practice"
-            android:parentActivityName=".DifficultyMenu"
+            android:parentActivityName=".basics.DifficultyMenu"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.spizer.mizer2.MainActivity" />
+                android:value=".Start.MainActivity" />
         </activity>
         <activity
-            android:name=".MathProblemSelector"
+            android:name=".Start.MathProblemSelector"
             android:label="@string/title_activity_math_problem_selector"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".Start.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.spizer.mizer2.SessionMenuActivity" />
+                android:value=".Start.SessionMenuActivity" />
         </activity>
 
         <meta-data

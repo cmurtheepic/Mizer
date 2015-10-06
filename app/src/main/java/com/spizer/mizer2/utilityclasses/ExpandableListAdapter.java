@@ -1,4 +1,4 @@
-        package com.spizer.mizer2;
+        package com.spizer.mizer2.utilityclasses;
 
         import java.util.ArrayList;
         import java.util.HashMap;
@@ -12,7 +12,9 @@
         import android.widget.BaseExpandableListAdapter;
         import android.widget.TextView;
 
-public class ExpandableListAdapter extends BaseExpandableListAdapter {
+        import com.spizer.mizer2.R;
+
+        public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context _context;
     private List<String> _listDataHeader; // header titles

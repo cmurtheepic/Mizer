@@ -1,4 +1,4 @@
-package com.spizer.mizer2;
+package com.spizer.mizer2.otherclasses;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,21 +6,23 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+import com.spizer.mizer2.R;
+import com.spizer.mizer2.Start.SessionMenuActivity;
 
-    public boolean PreviousSession = false;
+public class NotWorking extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_not_working);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_not_working, menu);
         return true;
     }
 
@@ -39,23 +41,18 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /** called when the user clicks the START button **/
-    /** unless it was the first time starting the app **/
-    public void MPS(View view) {
-        if (!PreviousSession) {
-            Intent OpenMPS = new Intent(this, MathProblemSelector.class);
-            startActivity(OpenMPS);
-        } else {
-            System.out.println("Something when terribly wrong at line: 45");
-        }
+    ImageButton iB_button;
+
+    /** this creates the imageview and sets the image tobe displayed in the image button **/
+    public void MakeView() {
+        iB_button = (ImageButton) findViewById(R.id.imageButton);
+        iB_button.setImageResource(R.mipmap.notfound);
     }
 
-    /** called when the user clicks a button for a feature that currently does not exist in the
-     * application or that currently does not work
-     */
-    public void NotWorking(View view) {
-        Intent NotWorkingView = new Intent(this, NotWorking.class);
-        startActivity(NotWorkingView);
+    /** this opens the sessionMenu when the user clicks the image button **/
+    public void SessionMenu(View view) {
+        Intent openSessionMenu = new Intent(this, SessionMenuActivity.class);
+        startActivity(openSessionMenu);
     }
 
 }

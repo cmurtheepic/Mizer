@@ -1,4 +1,4 @@
-package com.spizer.mizer2;
+package com.spizer.mizer2.basics;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.os.Handler;
+
+import com.spizer.mizer2.R;
 
 import java.text.DecimalFormat;
 import java.util.Random;

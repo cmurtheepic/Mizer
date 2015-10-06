@@ -1,4 +1,4 @@
-package com.spizer.mizer2;
+package com.spizer.mizer2.utilityclasses;
 
 import android.content.Context;
 import android.net.Uri;

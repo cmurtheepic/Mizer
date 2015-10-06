@@ -1,4 +1,4 @@
-package com.spizer.mizer2;
+package com.spizer.mizer2.basics;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Toast;
+
+import com.spizer.mizer2.R;
 
 public class ProblemSelector extends AppCompatActivity {
 
