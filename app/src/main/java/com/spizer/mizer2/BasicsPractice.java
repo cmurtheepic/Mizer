@@ -687,12 +687,12 @@ public class BasicsPractice extends AppCompatActivity {
                 Double d8 = Math.random() * DM.getDD();
                 int d2 = d8.intValue();
                 Log.d("BasicsPractice.java","the value of d2 = " + d2);
-                if(d1 == 0) { GenerateOperation(); }
-                if(d2 == 0) { GenerateOperation(); }
+                if(d1 == 0 || d2 == 0 || d1 == 0 && d2 == 0) { GenerateOperation(); }
+                if(d2 == 0 || d1 == 0 || d2 == 0 && d1 == 0) { GenerateOperation(); }
                 setAS2(d1 / d2);
                 Output = d1 + " / " + d2;
                 Log.d("BasicsPractice.java","the value d1 / d2 = " + getAS2());
-                if(getAS2() < 0) { GenerateOperation(); }
+                if(getAS2() < 0 || getAS2() < 1) { GenerateOperation(); }
                 if(d2 > d1) { GenerateOperation(); }
                 if (getS1() == 0) {
                     B1 = String.valueOf(df.format((getAS2())));

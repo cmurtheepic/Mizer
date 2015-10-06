@@ -26,26 +26,26 @@
         android:layout_centerHorizontal="true"
         android:onClick="Basics"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Algebra"
-        android:id="@+id/AlgebraButton"
-        android:textStyle="normal"
-        android:textSize="46dp"
-        android:layout_below="@+id/BasicsButton"
-        android:layout_centerHorizontal="true"
-        android:onClick="Algebra"/>
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Algebra"-->
+        <!--android:id="@+id/AlgebraButton"-->
+        <!--android:textStyle="normal"-->
+        <!--android:textSize="46dp"-->
+        <!--android:layout_below="@+id/BasicsButton"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:onClick="Algebra"/>-->
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Geometry"
-        android:id="@+id/GeometryButton"
-        android:textStyle="normal"
-        android:textSize="46dp"
-        android:layout_below="@+id/AlgebraButton"
-        android:layout_centerHorizontal="true"
-        android:onClick="Geometry"/>
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Geometry"-->
+        <!--android:id="@+id/GeometryButton"-->
+        <!--android:textStyle="normal"-->
+        <!--android:textSize="46dp"-->
+        <!--android:layout_below="@+id/AlgebraButton"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:onClick="Geometry"/>-->
 
 </RelativeLayout>

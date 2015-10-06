@@ -45,15 +45,15 @@ public class MathProblemSelector extends AppCompatActivity {
 
     /** called when the user clicks the ALGEBRA button **/
     /** currently does not have Algebra practice mode **/
-    public void Algebra(View view) {
-        Intent AlgebraView = new Intent(this, NotWorking.class);
-        startActivity(AlgebraView);
-    }
-
-    /** called when the user clicks the GEOMETRY button **/
-    /** currently does not have Geometry practice mode **/
-    public void Geometry(View view) {
-        Intent GeometryView = new Intent(this, NotWorking.class);
-        startActivity(GeometryView);
-    }
+//    public void Algebra(View view) {
+//        Intent AlgebraView = new Intent(this, NotWorking.class);
+//        startActivity(AlgebraView);
+//    }
+//
+//    /** called when the user clicks the GEOMETRY button **/
+//    /** currently does not have Geometry practice mode **/
+//    public void Geometry(View view) {
+//        Intent GeometryView = new Intent(this, NotWorking.class);
+//        startActivity(GeometryView);
+//    }
 }
