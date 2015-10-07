@@ -253,7 +253,7 @@ public class BasicsPractice extends AppCompatActivity {
         extras.putBoolean("is_designed_for_families", true);
 
         /** finds the ad view by its ID, then requests a new AD to be built **/
-        AdView mAdView = (AdView) findViewById(R.id.adView1);
+        AdView mAdView = (AdView) findViewById(R.id.adView7);
 
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) // All emulators
