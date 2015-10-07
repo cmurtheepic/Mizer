@@ -1,21 +1,18 @@
 package com.spizer.mizer2.Start;
 
-import android.app.ActionBar;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.transition.Scene;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.ads.mediation.admob.AdMobAdapter;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.basics.BasicsPractice;
 import com.spizer.mizer2.R;
+import com.spizer.mizer2.notifications.ReminderToPractice;
+import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 public class MathProblemSelector extends AppCompatActivity {
 
@@ -55,7 +52,8 @@ public class MathProblemSelector extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent SettingsV = new Intent(this, SettingsActivity.class);
+            startActivity(SettingsV);
         }
 
         return super.onOptionsItemSelected(item);
@@ -80,4 +78,9 @@ public class MathProblemSelector extends AppCompatActivity {
 //        Intent GeometryView = new Intent(this, NotWorking.class);
 //        startActivity(GeometryView);
 //    }
+
+    public void notify(View view) {
+        Intent notif = new Intent(this, ReminderToPractice.class);
+        startActivity(notif);
+    }
 }

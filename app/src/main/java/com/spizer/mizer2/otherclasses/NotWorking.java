@@ -14,6 +14,7 @@ import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.R;
 import com.spizer.mizer2.Start.SessionMenuActivity;
+import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 public class NotWorking extends AppCompatActivity {
 
@@ -55,7 +56,8 @@ public class NotWorking extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent SettingsV = new Intent(this, SettingsActivity.class);
+            startActivity(SettingsV);
         }
 
         return super.onOptionsItemSelected(item);

@@ -1,5 +1,6 @@
 package com.spizer.mizer2.basics;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -13,6 +14,7 @@ import android.os.Handler;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.R;
+import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 import java.text.DecimalFormat;
 import java.util.Random;
@@ -310,7 +312,8 @@ public class BasicsPractice extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent SettingsV = new Intent(this, SettingsActivity.class);
+            startActivity(SettingsV);
         }
 
         return super.onOptionsItemSelected(item);

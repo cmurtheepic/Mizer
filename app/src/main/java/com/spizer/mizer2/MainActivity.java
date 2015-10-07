@@ -1,27 +1,17 @@
 package com.spizer.mizer2;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.transition.Scene;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.RelativeLayout;
-import android.widget.ViewAnimator;
 
-import com.google.ads.AdRequest.*;
-import com.google.ads.mediation.admob.AdMobAdapter;
-import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.analytics.Tracker;
 import com.spizer.mizer2.Start.MathProblemSelector;
 import com.spizer.mizer2.otherclasses.NotWorking;
-import com.spizer.mizer2.utilityclasses.AnalyticsApplication;
+import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 public class MainActivity extends Activity {
 
@@ -64,7 +54,8 @@ public class MainActivity extends Activity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent SettingsV = new Intent(this, SettingsActivity.class);
+            startActivity(SettingsV);
         }
 
         return super.onOptionsItemSelected(item);
@@ -89,4 +80,10 @@ public class MainActivity extends Activity {
         startActivity(NotWorkingView);
     }
 
+    /** called when the user clicks the settings button
+     */
+    public void Settings(View view) {
+        Intent SettingsV = new Intent(this, SettingsActivity.class);
+        startActivity(SettingsV);
+    }
 }

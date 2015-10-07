@@ -15,6 +15,7 @@ import com.google.ads.mediation.admob.AdMobAdapter;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.R;
+import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 public class ProblemSelector extends AppCompatActivity {
 
@@ -243,7 +244,8 @@ public class ProblemSelector extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent SettingsV = new Intent(this, SettingsActivity.class);
+            startActivity(SettingsV);
         }
 
         return super.onOptionsItemSelected(item);

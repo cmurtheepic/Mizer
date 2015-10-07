@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.spizer.mizer2.R;
 import com.spizer.mizer2.utilityclasses.ExpandableListAdapter;
+import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 public class DifficultyMenu extends AppCompatActivity {
 
@@ -401,7 +402,8 @@ public class DifficultyMenu extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent SettingsV = new Intent(this, SettingsActivity.class);
+            startActivity(SettingsV);
         }
 
         return super.onOptionsItemSelected(item);
