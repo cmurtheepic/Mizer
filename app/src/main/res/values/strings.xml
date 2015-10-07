@@ -3,10 +3,18 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_quickResume">QuickResume</string>
     <string name="title_activity_session_menu">SessionMenuActivity</string>
     <string name="title_activity_difficulty_menu">DifficultyMenu</string>
     <string name="title_activity_not_working">NotWorking</string>
     <string name="title_activity_problem_selector">Problems</string>
     <string name="title_activity_basics_practice">Mizer</string>
     <string name="title_activity_math_problem_selector">Mizer</string>
+    <string name="bottom_banner_on_start_ad_unit_id">ca-app-pub-3402258212303338/7254570205</string>
+    <string name="bottom_banner_on_session_menu_ad_unit_id">ca-app-pub-3402258212303338/1208036604</string>
+    <string name="bottom_banner_on_problem_selector_ad_unit_id">ca-app-pub-3402258212303338/2684769805</string>
+    <string name="bottom_banner_on_math_problem_selector_ad_unit_id">ca-app-pub-3402258212303338/4161503004</string>
+    <string name="bottom_banner_on_not_working_ad_unit_id">ca-app-pub-3402258212303338/5638236207</string>
+    <string name="bottom_banner_on_basics_practice_ad_unit_id">ca-app-pub-3402258212303338/1648688606</string>
+    <string name="top_banner_on_not_working_ad_unit_id">ca-app-pub-3402258212303338/7114969409</string>
 </resources>

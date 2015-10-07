@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.os.Handler;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.R;
 
 import java.text.DecimalFormat;
@@ -246,6 +248,21 @@ public class BasicsPractice extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basics_practice);
+
+        Bundle extras = new Bundle();
+        extras.putBoolean("is_designed_for_families", true);
+
+        /** finds the ad view by its ID, then requests a new AD to be built **/
+        AdView mAdView = (AdView) findViewById(R.id.adView1);
+
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) // All emulators
+                .addTestDevice("2A67F802D66C64C858760E73C4C62333") // My Samsung Galaxy Note 4
+                        //.addNetworkExtrasBundle(AdMobAdapter.class, extras)
+                .build(); // Builds the AD
+
+        mAdView.loadAd(adRequest);
+
         PO = (TextView) findViewById(R.id.problemoutput);
         C = (TextView) findViewById(R.id.correctTextView);
         IC = (TextView) findViewById(R.id.IncorrectTextView);

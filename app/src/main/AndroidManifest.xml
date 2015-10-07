@@ -10,7 +10,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo"
         android:label="Mizer"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:name="android.support.multidex.MultiDexApplication">
         <activity
             android:name=".MainActivity"
             android:label="Mizer" >

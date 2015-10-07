@@ -1,9 +1,10 @@
-package com.spizer.mizer2;
+package com.spizer.mizer2.utilityclasses;
 
 import android.app.Application;
 
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
+import com.spizer.mizer2.R;
 
 /**
  * Created by cmurt on 10/6/2015.

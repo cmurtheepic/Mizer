@@ -145,6 +145,8 @@ public class DifficultyMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_difficulty_menu);
 
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         // get the list view
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
 
