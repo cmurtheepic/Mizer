@@ -1,5 +1,7 @@
 package com.spizer.mizer2.basics;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -127,6 +129,16 @@ public class BasicsPractice extends AppCompatActivity {
         B9 = b9;
     }
 
+    private int HighScore;
+
+    public int getHighScore() {
+        return HighScore;
+    }
+
+    public void setHighScore(int highScore) {
+        HighScore = highScore;
+    }
+
     private String Output;
 
     @SuppressWarnings("unused")
@@ -246,6 +258,10 @@ public class BasicsPractice extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basics_practice);
+
+        SharedPreferences mPref = getSharedPreferences("", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = mPref.edit();
+
         PO = (TextView) findViewById(R.id.problemoutput);
         C = (TextView) findViewById(R.id.correctTextView);
         IC = (TextView) findViewById(R.id.IncorrectTextView);
@@ -1101,8 +1117,19 @@ public class BasicsPractice extends AppCompatActivity {
 
     /** this function updates the score displayed on screen **/
     private void ScoreUpdate() {
-        setScore(getScore()+1);
+
+        SharedPreferences mPref = getSharedPreferences("", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = mPref.edit();
+
+        setScore(getScore() + 1);
         S.setText(Integer.toString(getScore()));
+        setHighScore(Integer.parseInt(getResources().getString(R.string.saved_session_high_score)));
+        editor.putInt(getString(R.string.saved_recent_session_score), getScore());
+        editor.commit();
+        if(getScore() > getHighScore()) {
+            editor.putInt(getString(R.string.saved_session_high_score), getScore());
+        }
+        editor.commit();
         GenerateOperation();
     }
 

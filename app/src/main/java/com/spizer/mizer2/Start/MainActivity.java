@@ -1,12 +1,15 @@
 package com.spizer.mizer2.Start;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.spizer.mizer2.basics.Score;
 import com.spizer.mizer2.otherclasses.NotWorking;
 import com.spizer.mizer2.R;
 
@@ -18,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
     }
 
     @Override
@@ -61,4 +67,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(NotWorkingView);
     }
 
+    // called when the user clicks the rate button
+    public void Rate(View view) {
+
+    }
 }

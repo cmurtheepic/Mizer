@@ -35,4 +35,27 @@
         android:id="@+id/ConnorMurry_MainActivity_TextView"
         android:layout_below="@+id/Mizer_MainActivity_TextView"
         android:layout_centerHorizontal="true" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.spizer.mizer2.basics.Score"
+        android:id="@+id/fragment"
+        tools:layout="@layout/fragment_score"
+        android:layout_below="@+id/RateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate"
+        android:id="@+id/RateButton"
+        android:layout_below="@+id/Start_MainActivity_Button"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:enabled="true" />
+
 </RelativeLayout>

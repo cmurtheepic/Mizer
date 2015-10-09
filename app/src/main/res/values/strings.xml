@@ -9,4 +9,10 @@
     <string name="title_activity_problem_selector">Problems</string>
     <string name="title_activity_basics_practice">Mizer</string>
     <string name="title_activity_math_problem_selector">Mizer</string>
+    <string name="preference_file_key">Mizer_Prefs</string>
+    <string name="saved_recent_session_score"></string>
+    <string name="saved_session_high_score">5</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
