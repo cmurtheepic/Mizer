@@ -55,77 +55,77 @@ public class BasicsPractice extends AppCompatActivity {
     private String B8;
     private String B9;
 
-    public String getB1() {
-        return B1;
-    }
-
-    public void setB1(String b1) {
-        B1 = b1;
-    }
-
-    public String getB2() {
-        return B2;
-    }
-
-    public void setB2(String b2) {
-        B2 = b2;
-    }
-
-    public String getB3() {
-        return B3;
-    }
-
-    public void setB3(String b3) {
-        B3 = b3;
-    }
-
-    public String getB4() {
-        return B4;
-    }
-
-    public void setB4(String b4) {
-        B4 = b4;
-    }
-
-    public String getB5() {
-        return B5;
-    }
-
-    public void setB5(String b5) {
-        B5 = b5;
-    }
-
-    public String getB6() {
-        return B6;
-    }
-
-    public void setB6(String b6) {
-        B6 = b6;
-    }
-
-    public String getB7() {
-        return B7;
-    }
-
-    public void setB7(String b7) {
-        B7 = b7;
-    }
-
-    public String getB8() {
-        return B8;
-    }
-
-    public void setB8(String b8) {
-        B8 = b8;
-    }
-
-    public String getB9() {
-        return B9;
-    }
-
-    public void setB9(String b9) {
-        B9 = b9;
-    }
+//    public String getB1() {
+//        return B1;
+//    }
+//
+//    public void setB1(String b1) {
+//        B1 = b1;
+//    }
+//
+//    public String getB2() {
+//        return B2;
+//    }
+//
+//    public void setB2(String b2) {
+//        B2 = b2;
+//    }
+//
+//    public String getB3() {
+//        return B3;
+//    }
+//
+//    public void setB3(String b3) {
+//        B3 = b3;
+//    }
+//
+//    public String getB4() {
+//        return B4;
+//    }
+//
+//    public void setB4(String b4) {
+//        B4 = b4;
+//    }
+//
+//    public String getB5() {
+//        return B5;
+//    }
+//
+//    public void setB5(String b5) {
+//        B5 = b5;
+//    }
+//
+//    public String getB6() {
+//        return B6;
+//    }
+//
+//    public void setB6(String b6) {
+//        B6 = b6;
+//    }
+//
+//    public String getB7() {
+//        return B7;
+//    }
+//
+//    public void setB7(String b7) {
+//        B7 = b7;
+//    }
+//
+//    public String getB8() {
+//        return B8;
+//    }
+//
+//    public void setB8(String b8) {
+//        B8 = b8;
+//    }
+//
+//    public String getB9() {
+//        return B9;
+//    }
+//
+//    public void setB9(String b9) {
+//        B9 = b9;
+//    }
 
     private String Output;
 
@@ -154,15 +154,31 @@ public class BasicsPractice extends AppCompatActivity {
         this.AS2 = AS2;
     }
 
-    public int AD = DM.getAD();
-    public int SD = DM.getSD();
+//    public int AD = DM.getAD();
+//    public int SD = DM.getSD();
     public int MD = DM.getMD() + 420;
-    public int DD = DM.getDD();
+//    public int DD = DM.getDD();
 
     public boolean AddP = PS.getAddProb();
     public boolean SubP = PS.getSubProb();
     public boolean MultiP = PS.getMultiProb();
     public boolean DivisP = PS.getDivisProb();
+
+    public boolean getAddP() {
+        return AddP;
+    }
+
+    public boolean getSubP() {
+        return SubP;
+    }
+
+    public boolean getMultiP() {
+        return MultiP;
+    }
+
+    public boolean getDivisP() {
+        return DivisP;
+    }
 
     public boolean AChecked = DM.getAChecked();
     public boolean SChecked = DM.getSChecked();
@@ -226,9 +242,9 @@ public class BasicsPractice extends AppCompatActivity {
         S1 = s1;
     }
 
-    DecimalFormat df = new DecimalFormat("#.000");
+    DecimalFormat df = new DecimalFormat("##.000");
 
-    DecimalFormat d1 = new DecimalFormat("##");
+    DecimalFormat d1 = new DecimalFormat("####");
 
     private boolean clicked;
 
@@ -301,35 +317,35 @@ public class BasicsPractice extends AppCompatActivity {
 
     @SuppressWarnings("unused")
     private void generateNums() {
-        if (AddP && AChecked && !SubP && !MultiP && !DivisP) {
+        if (getAddP() && AChecked && !getSubP() && !getMultiP() && !getDivisP()) {
             Max1 = 1;
-        } else if (!AddP && SubP && SChecked && !MultiP && !DivisP) {
+        } else if (!getAddP() && getSubP() && SChecked && !getMultiP() && !getDivisP()) {
             Max1 = 1;
-        } else if (!AddP && !SubP && MultiP && MChecked && !DivisP) {
+        } else if (!getAddP() && !getSubP() && getMultiP() && MChecked && !getDivisP()) {
             Max1 = 1;
-        } else if (!AddP && !SubP && !MultiP && DivisP && DChecked) {
+        } else if (!getAddP() && !getSubP() && !getMultiP() && getDivisP() && DChecked) {
             Max1 = 1;
-        } else if (AddP && AChecked && SubP && SChecked && !MultiP && !DivisP) {
+        } else if (getAddP() && AChecked && getSubP() && SChecked && !getMultiP() && !getDivisP()) {
             Max1 = 2;
-        } else if (AddP && AChecked && !SubP && MultiP && MChecked && !DivisP) {
+        } else if (getAddP() && AChecked && !getSubP() && getMultiP() && MChecked && !getDivisP()) {
             Max1 = 2;
-        } else if (AddP && AChecked && !SubP && !MultiP && DivisP && DChecked) {
+        } else if (getAddP() && AChecked && !getSubP() && !getMultiP() && getDivisP() && DChecked) {
             Max1 = 2;
-        } else if (!AddP && SubP && SChecked && MultiP && MChecked && !DivisP) {
+        } else if (!getAddP() && getSubP() && SChecked && getMultiP() && MChecked && !getDivisP()) {
             Max1 = 2;
-        } else if (!AddP && SubP && SChecked && !MultiP && DivisP && DChecked) {
+        } else if (!getAddP() && getSubP() && SChecked && !getMultiP() && getDivisP() && DChecked) {
             Max1 = 2;
-        } else if (!AddP && !SubP && MultiP && MChecked && DivisP && DChecked) {
+        } else if (!getAddP() && !getSubP() && getMultiP() && MChecked && getDivisP() && DChecked) {
             Max1 = 2;
-        } else if (AddP && AChecked && SubP && SChecked && MultiP && MChecked && !DivisP) {
+        } else if (getAddP() && AChecked && getSubP() && SChecked && getMultiP() && MChecked && !getDivisP()) {
             Max1 = 3;
-        } else if (AddP && AChecked && SubP && SChecked && !MultiP && DivisP && DChecked) {
+        } else if (getAddP() && AChecked && getSubP() && SChecked && !getMultiP() && getDivisP() && DChecked) {
             Max1 = 3;
-        } else if (AddP && AChecked && !SubP && MultiP && MChecked && DivisP && DChecked) {
+        } else if (getAddP() && AChecked && !getSubP() && getMultiP() && MChecked && getDivisP() && DChecked) {
             Max1 = 3;
-        } else if (!AddP && SubP && SChecked && MultiP && MChecked && DivisP && DChecked) {
+        } else if (!getAddP() && getSubP() && SChecked && getMultiP() && MChecked && getDivisP() && DChecked) {
             Max1 = 3;
-        } else if (AddP && AChecked && SubP && SChecked && MultiP && MChecked && DivisP && DChecked) {
+        } else if (getAddP() && AChecked && getSubP() && SChecked && getMultiP() && MChecked && getDivisP() && DChecked) {
             Max1 = 4;
         } else {
             Log.e("BasicsPractice.java", "Something went horribly wrong at line : 119");
@@ -342,6 +358,7 @@ public class BasicsPractice extends AppCompatActivity {
     private void GenerateOperation() {
         Double d = Math.random() * Max1;
         setS1((int) (Math.random() * 9));
+        Log.d("BasicsPractice.java", "S1 equals: " + getS1());
         int o1 = d.intValue();
         Log.d("BasicsPractice.java", "the GenerateOperation function generated : " + o1 + " : as the number to determine the operation to be built");
         if (o1 == 0) {
@@ -450,6 +467,18 @@ public class BasicsPractice extends AppCompatActivity {
                     B1 = String.valueOf(d1.format((int) (Math.random() * DM.getAD() + DM.getAD())));
                 } else {
                     Log.e("BasicsPractice.java", "Something went horribly wrong on line : 160-181");
+                }
+                if((B1 == B2 || B1 == B3 || B1 == B4 || B1 == B5 || B1 == B6 || B1 == B7 || B1 == B8 || B1 == B9) ||
+                        (B2 == B1 || B2 == B3 || B2 == B4 || B2 == B5 || B2 == B6 || B2 == B7 || B2 == B8 || B2 == B9) ||
+                        (B3 == B1 || B3 == B2 || B3 == B4 || B3 == B5 || B3 == B6 || B3 == B7 || B3 == B8 || B3 == B9) ||
+                        (B4 == B1 || B4 == B2 || B4 == B3 || B4 == B5 || B4 == B6 || B4 == B7 || B4 == B8 || B4 == B9) ||
+                        (B5 == B1 || B5 == B2 || B5 == B3 || B5 == B4 || B5 == B6 || B5 == B7 || B5 == B8 || B5 == B9) ||
+                        (B6 == B1 || B6 == B2 || B6 == B3 || B6 == B4 || B6 == B5 || B6 == B7 || B6 == B8 || B6 == B9) ||
+                        (B7 == B1 || B7 == B2 || B7 == B3 || B7 == B4 || B7 == B5 || B7 == B6 || B7 == B8 || B7 == B9) ||
+                        (B8 == B1 || B8 == B2 || B8 == B3 || B8 == B4 || B8 == B5 || B8 == B6 || B8 == B7 || B8 == B9) ||
+                        (B9 == B1 || B9 == B2 || B9 == B3 || B9 == B4 || B9 == B5 || B9 == B6 || B9 == B7 || B9 == B8)) {
+                    Log.d("BasicsPractice.java","there was a duplicate, generating new problem and answers");
+                    GenerateOperation();
                 }
                 OutputToAnswerSelection();
                 OutputToProblemView();
@@ -561,6 +590,18 @@ public class BasicsPractice extends AppCompatActivity {
                     if((int) (Math.random() * 2) == 1) {B8 = "-" + String.valueOf(d1.format((int) (Math.random() * DM.getSD())));} else {B8 = String.valueOf(d1.format((int) (Math.random() * DM.getSD())));}
                 } else {
                     Log.e("BasicsPractice.java", "Something went horribly wrong on line : 160-181");
+                }
+                if((B1 == B2 || B1 == B3 || B1 == B4 || B1 == B5 || B1 == B6 || B1 == B7 || B1 == B8 || B1 == B9) ||
+                        (B2 == B1 || B2 == B3 || B2 == B4 || B2 == B5 || B2 == B6 || B2 == B7 || B2 == B8 || B2 == B9) ||
+                        (B3 == B1 || B3 == B2 || B3 == B4 || B3 == B5 || B3 == B6 || B3 == B7 || B3 == B8 || B3 == B9) ||
+                        (B4 == B1 || B4 == B2 || B4 == B3 || B4 == B5 || B4 == B6 || B4 == B7 || B4 == B8 || B4 == B9) ||
+                        (B5 == B1 || B5 == B2 || B5 == B3 || B5 == B4 || B5 == B6 || B5 == B7 || B5 == B8 || B5 == B9) ||
+                        (B6 == B1 || B6 == B2 || B6 == B3 || B6 == B4 || B6 == B5 || B6 == B7 || B6 == B8 || B6 == B9) ||
+                        (B7 == B1 || B7 == B2 || B7 == B3 || B7 == B4 || B7 == B5 || B7 == B6 || B7 == B8 || B7 == B9) ||
+                        (B8 == B1 || B8 == B2 || B8 == B3 || B8 == B4 || B8 == B5 || B8 == B6 || B8 == B7 || B8 == B9) ||
+                        (B9 == B1 || B9 == B2 || B9 == B3 || B9 == B4 || B9 == B5 || B9 == B6 || B9 == B7 || B9 == B8)) {
+                    Log.d("BasicsPractice.java","there was a duplicate, generating new problem and answers");
+                    GenerateOperation();
                 }
                 OutputToAnswerSelection();
                 OutputToProblemView();
@@ -674,6 +715,18 @@ public class BasicsPractice extends AppCompatActivity {
                 } else {
                     Log.e("BasicsPractice.java", "Something went horribly wrong on line : 160-181");
                 }
+                if((B1 == B2 || B1 == B3 || B1 == B4 || B1 == B5 || B1 == B6 || B1 == B7 || B1 == B8 || B1 == B9) ||
+                        (B2 == B1 || B2 == B3 || B2 == B4 || B2 == B5 || B2 == B6 || B2 == B7 || B2 == B8 || B2 == B9) ||
+                        (B3 == B1 || B3 == B2 || B3 == B4 || B3 == B5 || B3 == B6 || B3 == B7 || B3 == B8 || B3 == B9) ||
+                        (B4 == B1 || B4 == B2 || B4 == B3 || B4 == B5 || B4 == B6 || B4 == B7 || B4 == B8 || B4 == B9) ||
+                        (B5 == B1 || B5 == B2 || B5 == B3 || B5 == B4 || B5 == B6 || B5 == B7 || B5 == B8 || B5 == B9) ||
+                        (B6 == B1 || B6 == B2 || B6 == B3 || B6 == B4 || B6 == B5 || B6 == B7 || B6 == B8 || B6 == B9) ||
+                        (B7 == B1 || B7 == B2 || B7 == B3 || B7 == B4 || B7 == B5 || B7 == B6 || B7 == B8 || B7 == B9) ||
+                        (B8 == B1 || B8 == B2 || B8 == B3 || B8 == B4 || B8 == B5 || B8 == B6 || B8 == B7 || B8 == B9) ||
+                        (B9 == B1 || B9 == B2 || B9 == B3 || B9 == B4 || B9 == B5 || B9 == B6 || B9 == B7 || B9 == B8)) {
+                    Log.d("BasicsPractice.java","there was a duplicate, generating new problem and answers");
+                    GenerateOperation();
+                }
                 OutputToAnswerSelection();
                 OutputToProblemView();
             }
@@ -689,13 +742,14 @@ public class BasicsPractice extends AppCompatActivity {
                 Double d8 = Math.random() * DM.getDD();
                 int d2 = d8.intValue();
                 Log.d("BasicsPractice.java","the value of d2 = " + d2);
-                if(d1 == 0 || d2 == 0 || d1 == 0 && d2 == 0) { GenerateOperation(); }
-                if(d2 == 0 || d1 == 0 || d2 == 0 && d1 == 0) { GenerateOperation(); }
+                if(d1 == 0 || d2 == 0 || d1 == d2) { GenerateOperation(); }
+//                if(d2 == 0 || d1 == 0 || d2 == 0 && d1 == 0) { GenerateOperation(); }
+                if(d2 > d1) { GenerateOperation(); }
                 setAS2(d1 / d2);
+                if(getAS2() < 0 || getAS2() < 1) { GenerateOperation(); }
                 Output = d1 + " / " + d2;
                 Log.d("BasicsPractice.java","the value d1 / d2 = " + getAS2());
-                if(getAS2() < 0 || getAS2() < 1) { GenerateOperation(); }
-                if(d2 > d1) { GenerateOperation(); }
+//                if(getAS2() < 0 || getAS2() < 1) { GenerateOperation(); }
                 if (getS1() == 0) {
                     B1 = String.valueOf(df.format((getAS2())));
                     B2 = String.valueOf(df.format(Math.random() * DM.getDD()));
@@ -707,7 +761,7 @@ public class BasicsPractice extends AppCompatActivity {
                     B8 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B9 = String.valueOf(df.format(Math.random() * DM.getDD()));
                 } else if (getS1() == 1) {
-                    B2 = String.valueOf(getAS2());
+                    B2 = String.valueOf(df.format((getAS2())));
                     B1 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B3 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B4 = String.valueOf(df.format(Math.random() * DM.getDD()));
@@ -717,7 +771,7 @@ public class BasicsPractice extends AppCompatActivity {
                     B8 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B9 = String.valueOf(df.format(Math.random() * DM.getDD()));
                 } else if (getS1() == 2) {
-                    B3 = String.valueOf(getAS2());
+                    B3 = String.valueOf(df.format((getAS2())));
                     B1 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B2 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B4 = String.valueOf(df.format(Math.random() * DM.getDD()));
@@ -727,7 +781,7 @@ public class BasicsPractice extends AppCompatActivity {
                     B8 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B9 = String.valueOf(df.format(Math.random() * DM.getDD()));
                 } else if (getS1() == 3) {
-                    B4 = String.valueOf(getAS2());
+                    B4 = String.valueOf(df.format((getAS2())));
                     B1 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B2 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B3 = String.valueOf(df.format(Math.random() * DM.getDD()));
@@ -737,7 +791,7 @@ public class BasicsPractice extends AppCompatActivity {
                     B8 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B9 = String.valueOf(df.format(Math.random() * DM.getDD()));
                 } else if (getS1() == 4) {
-                    B5 = String.valueOf(getAS2());
+                    B5 = String.valueOf(df.format((getAS2())));
                     B1 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B2 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B3 = String.valueOf(df.format(Math.random() * DM.getDD()));
@@ -747,7 +801,7 @@ public class BasicsPractice extends AppCompatActivity {
                     B8 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B9 = String.valueOf(df.format(Math.random() * DM.getDD()));
                 } else if (getS1() == 5) {
-                    B6 = String.valueOf(getAS2());
+                    B6 = String.valueOf(df.format((getAS2())));
                     B1 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B2 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B3 = String.valueOf(df.format(Math.random() * DM.getDD()));
@@ -757,7 +811,7 @@ public class BasicsPractice extends AppCompatActivity {
                     B8 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B9 = String.valueOf(df.format(Math.random() * DM.getDD()));
                 } else if (getS1() == 6) {
-                    B7 = String.valueOf(getAS2());
+                    B7 = String.valueOf(df.format((getAS2())));
                     B9 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B8 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B6 = String.valueOf(df.format(Math.random() * DM.getDD()));
@@ -767,7 +821,7 @@ public class BasicsPractice extends AppCompatActivity {
                     B2 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B1 = String.valueOf(df.format(Math.random() * DM.getDD()));
                 } else if (getS1() == 7) {
-                    B8 = String.valueOf(getAS2());
+                    B8 = String.valueOf(df.format((getAS2())));
                     B9 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B7 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B6 = String.valueOf(df.format(Math.random() * DM.getDD()));
@@ -777,7 +831,7 @@ public class BasicsPractice extends AppCompatActivity {
                     B2 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B1 = String.valueOf(df.format(Math.random() * DM.getDD()));
                 } else if (getS1() == 8) {
-                    B9 = String.valueOf(getAS2());
+                    B9 = String.valueOf(df.format((getAS2())));
                     B8 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B7 = String.valueOf(df.format(Math.random() * DM.getDD()));
                     B6 = String.valueOf(df.format(Math.random() * DM.getDD()));
@@ -788,6 +842,18 @@ public class BasicsPractice extends AppCompatActivity {
                     B1 = String.valueOf(df.format(Math.random() * DM.getDD()));
                 } else {
                     Log.e("BasicsPractice.java", "Something went horribly wrong on line : 160-181");
+                }
+                if((B1 == B2 || B1 == B3 || B1 == B4 || B1 == B5 || B1 == B6 || B1 == B7 || B1 == B8 || B1 == B9) ||
+                        (B2 == B1 || B2 == B3 || B2 == B4 || B2 == B5 || B2 == B6 || B2 == B7 || B2 == B8 || B2 == B9) ||
+                        (B3 == B1 || B3 == B2 || B3 == B4 || B3 == B5 || B3 == B6 || B3 == B7 || B3 == B8 || B3 == B9) ||
+                        (B4 == B1 || B4 == B2 || B4 == B3 || B4 == B5 || B4 == B6 || B4 == B7 || B4 == B8 || B4 == B9) ||
+                        (B5 == B1 || B5 == B2 || B5 == B3 || B5 == B4 || B5 == B6 || B5 == B7 || B5 == B8 || B5 == B9) ||
+                        (B6 == B1 || B6 == B2 || B6 == B3 || B6 == B4 || B6 == B5 || B6 == B7 || B6 == B8 || B6 == B9) ||
+                        (B7 == B1 || B7 == B2 || B7 == B3 || B7 == B4 || B7 == B5 || B7 == B6 || B7 == B8 || B7 == B9) ||
+                        (B8 == B1 || B8 == B2 || B8 == B3 || B8 == B4 || B8 == B5 || B8 == B6 || B8 == B7 || B8 == B9) ||
+                        (B9 == B1 || B9 == B2 || B9 == B3 || B9 == B4 || B9 == B5 || B9 == B6 || B9 == B7 || B9 == B8)) {
+                    Log.d("BasicsPractice.java","there was a duplicate, generating new problem and answers");
+                    GenerateOperation();
                 }
                 OutputToAnswerSelection();
                 OutputToProblemView();
@@ -804,17 +870,6 @@ public class BasicsPractice extends AppCompatActivity {
     /** this outputs the value of the B(num) int variables to the desired button on screen that in the Ui **/
     /** the desired button will be the correct answer **/
     private void OutputToAnswerSelection() {
-
-        button1.setText(B1);
-        button2.setText(B2);
-        button3.setText(B3);
-        button4.setText(B4);
-        button5.setText(B5);
-        button6.setText(B6);
-        button7.setText(B7);
-        button8.setText(B8);
-        button9.setText(B9);
-
         try {
             button1.setText(B1);
         } catch (Exception e) {
@@ -875,13 +930,23 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB1 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(!getClicked()) {
+            if (!getClicked()) {
                 if (getS1() == 0) {
                     C.setEnabled(true);
                     setClicked(true);
                     Handler.postDelayed(Correct1, 1750);
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button1.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
                 } else {
-                    if(button1.getText() == Integer.toString(getAS1()) || button1.getText() == String.valueOf(getAS2())) {
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button1.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
+                    if (button1.getText() == Integer.toString(getAS1())) {
+                        C.setEnabled(true);
+                        setClicked(true);
+                        Handler.postDelayed(InCorrect1, 1750);
+                    } else if ((button1.getText()) == String.valueOf(getAS2())) {
                         C.setEnabled(true);
                         setClicked(true);
                         Handler.postDelayed(InCorrect1, 1750);
@@ -897,13 +962,23 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB2 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(!getClicked()) {
+            if (!getClicked()) {
                 if (getS1() == 1) {
                     C.setEnabled(true);
                     setClicked(true);
                     Handler.postDelayed(Correct1, 1750);
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button2.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
                 } else {
-                    if(button2.getText() == Integer.toString(getAS1()) || button2.getText() == String.valueOf(getAS2())) {
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button2.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
+                    if ((button2.getText()) == Integer.toString(getAS1())) {
+                        C.setEnabled(true);
+                        setClicked(true);
+                        Handler.postDelayed(InCorrect1, 1750);
+                    } else if (button2.getText() == String.valueOf(getAS2())) {
                         C.setEnabled(true);
                         setClicked(true);
                         Handler.postDelayed(InCorrect1, 1750);
@@ -919,13 +994,23 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB3 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(!getClicked()) {
+            if (!getClicked()) {
                 if (getS1() == 2) {
                     C.setEnabled(true);
                     setClicked(true);
                     Handler.postDelayed(Correct1, 1750);
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button3.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
                 } else {
-                    if(button3.getText() == Integer.toString(getAS1()) || button3.getText() == String.valueOf(getAS2())) {
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button3.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
+                    if ((button3.getText()) == Integer.toString(getAS1())) {
+                        C.setEnabled(true);
+                        setClicked(true);
+                        Handler.postDelayed(InCorrect1, 1750);
+                    } else if ((button3.getText()) == String.valueOf(getAS2())) {
                         C.setEnabled(true);
                         setClicked(true);
                         Handler.postDelayed(InCorrect1, 1750);
@@ -946,8 +1031,18 @@ public class BasicsPractice extends AppCompatActivity {
                     C.setEnabled(true);
                     setClicked(true);
                     Handler.postDelayed(Correct1, 1750);
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button4.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
                 } else {
-                    if(button4.getText() == Integer.toString(getAS1()) || button4.getText() == String.valueOf(getAS2())) {
+                    Log.d("BasicsPractice.java","button clicked is equal to : " + button4.getText());
+                    Log.d("BasicsPractice.java","AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java","AS2 equals: " + getAS2());
+                    if((button4.getText()) == Integer.toString(getAS1())) {
+                        C.setEnabled(true);
+                        setClicked(true);
+                        Handler.postDelayed(InCorrect1, 1750);
+                    } else if((button4.getText()) == String.valueOf(getAS2())) {
                         C.setEnabled(true);
                         setClicked(true);
                         Handler.postDelayed(InCorrect1, 1750);
@@ -968,8 +1063,18 @@ public class BasicsPractice extends AppCompatActivity {
                     C.setEnabled(true);
                     setClicked(true);
                     Handler.postDelayed(Correct1, 1750);
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button5.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
                 } else {
-                    if(button5.getText() == Integer.toString(getAS1()) || button5.getText() == String.valueOf(getAS2())) {
+                    Log.d("BasicsPractice.java","button clicked is equal to : " + button5.getText());
+                    Log.d("BasicsPractice.java","AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java","AS2 equals: " + getAS2());
+                    if(button5.getText() == Integer.toString(getAS1())) {
+                        C.setEnabled(true);
+                        setClicked(true);
+                        Handler.postDelayed(InCorrect1, 1750);
+                    } else if((button5.getText()) == String.valueOf(getAS2())) {
                         C.setEnabled(true);
                         setClicked(true);
                         Handler.postDelayed(InCorrect1, 1750);
@@ -990,8 +1095,18 @@ public class BasicsPractice extends AppCompatActivity {
                     C.setEnabled(true);
                     setClicked(true);
                     Handler.postDelayed(Correct1, 1750);
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button6.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
                 } else {
-                    if(button6.getText() == Integer.toString(getAS1()) || button6.getText() == String.valueOf(getAS2())) {
+                    Log.d("BasicsPractice.java","button clicked is equal to : " + button6.getText());
+                    Log.d("BasicsPractice.java","AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java","AS2 equals: " + getAS2());
+                    if(button6.getText() == Integer.toString(getAS1())) {
+                        C.setEnabled(true);
+                        setClicked(true);
+                        Handler.postDelayed(InCorrect1, 1750);
+                    } else if((button6.getText()) == String.valueOf(getAS2())) {
                         C.setEnabled(true);
                         setClicked(true);
                         Handler.postDelayed(InCorrect1, 1750);
@@ -1012,8 +1127,18 @@ public class BasicsPractice extends AppCompatActivity {
                     C.setEnabled(true);
                     setClicked(true);
                     Handler.postDelayed(Correct1, 1750);
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button7.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
                 } else {
-                    if(button7.getText() == Integer.toString(getAS1()) || button7.getText() == String.valueOf(getAS2())) {
+                    Log.d("BasicsPractice.java","button clicked is equal to : " + button7.getText());
+                    Log.d("BasicsPractice.java","AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java","AS2 equals: " + getAS2());
+                    if(button7.getText() == Integer.toString(getAS1())) {
+                        C.setEnabled(true);
+                        setClicked(true);
+                        Handler.postDelayed(InCorrect1, 1750);
+                    } else if((button7.getText()) == String.valueOf(getAS2())) {
                         C.setEnabled(true);
                         setClicked(true);
                         Handler.postDelayed(InCorrect1, 1750);
@@ -1034,8 +1159,18 @@ public class BasicsPractice extends AppCompatActivity {
                     C.setEnabled(true);
                     setClicked(true);
                     Handler.postDelayed(Correct1, 1750);
+                    Log.d("BasicsPractice.java", "button clicked is equal to : " + button8.getText());
+                    Log.d("BasicsPractice.java", "AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java", "AS2 equals: " + getAS2());
                 } else {
-                    if(button8.getText() == Integer.toString(getAS1()) || button8.getText() == String.valueOf(getAS2())) {
+                    Log.d("BasicsPractice.java","button clicked is equal to : " + button8.getText());
+                    Log.d("BasicsPractice.java","AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java","AS2 equals: " + getAS2());
+                    if(button8.getText() == Integer.toString(getAS1())) {
+                        C.setEnabled(true);
+                        setClicked(true);
+                        Handler.postDelayed(InCorrect1, 1750);
+                    } else if((button8.getText()) == String.valueOf(getAS2())) {
                         C.setEnabled(true);
                         setClicked(true);
                         Handler.postDelayed(InCorrect1, 1750);
@@ -1056,8 +1191,18 @@ public class BasicsPractice extends AppCompatActivity {
                     setClicked(true);
                     C.setEnabled(true);
                     Handler.postDelayed(Correct1, 1750);
+                    Log.d("BasicsPractice.java","button clicked is equal to : " + button9.getText());
+                    Log.d("BasicsPractice.java","AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java","AS2 equals: " + getAS2());
                 } else {
-                    if(button9.getText() == Integer.toString(getAS1()) || button9.getText() == String.valueOf(getAS2())) {
+                    Log.d("BasicsPractice.java","button clicked is equal to : " + button9.getText());
+                    Log.d("BasicsPractice.java","AS1 equals: " + getAS1());
+                    Log.d("BasicsPractice.java","AS2 equals: " + getAS2());
+                    if(button9.getText() == Integer.toString(getAS1())) {
+                        C.setEnabled(true);
+                        setClicked(true);
+                        Handler.postDelayed(InCorrect1, 1750);
+                    } else if((button9.getText()) == String.valueOf(getAS2())) {
                         C.setEnabled(true);
                         setClicked(true);
                         Handler.postDelayed(InCorrect1, 1750);
@@ -1092,12 +1237,12 @@ public class BasicsPractice extends AppCompatActivity {
     };
 
     /** this is called when the class basicspractice first starts **/
-    private Runnable Start = new Runnable() {
-        @Override
-        public void run() {
-            GenerateOperation();
-        }
-    };
+//    private Runnable Start = new Runnable() {
+//        @Override
+//        public void run() {
+//            GenerateOperation();
+//        }
+//    };
 
     /** this function updates the score displayed on screen **/
     private void ScoreUpdate() {
@@ -1105,5 +1250,4 @@ public class BasicsPractice extends AppCompatActivity {
         S.setText(Integer.toString(getScore()));
         GenerateOperation();
     }
-
 }
