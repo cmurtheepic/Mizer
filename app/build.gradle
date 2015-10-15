@@ -60,6 +60,8 @@ android {
             zipAlignEnabled true
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
