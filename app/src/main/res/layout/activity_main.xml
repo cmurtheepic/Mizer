@@ -37,26 +37,15 @@
             android:layout_below="@+id/Mizer_MainActivity_TextView"
             android:layout_centerHorizontal="true" />
 
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            ads:adSize="BANNER"
-            ads:adUnitId="@string/bottom_banner_on_start_ad_unit_id"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="false">
-        </com.google.android.gms.ads.AdView>
-
-<<<<<<< HEAD
-=======
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="By, ConnorMurry"
-        android:id="@+id/ConnorMurry_MainActivity_TextView"
-        android:layout_below="@+id/Mizer_MainActivity_TextView"
-        android:layout_centerHorizontal="true" />
+        <!--<com.google.android.gms.ads.AdView-->
+            <!--android:id="@+id/adView1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--ads:adSize="BANNER"-->
+            <!--ads:adUnitId="@string/bottom_banner_on_start_ad_unit_id"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="false">-->
+        <!--</com.google.android.gms.ads.AdView>-->
 
     <fragment
         android:layout_width="wrap_content"
@@ -80,5 +69,4 @@
         android:textStyle="normal"
         android:enabled="false" />
 
->>>>>>> master
 </RelativeLayout>

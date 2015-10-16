@@ -1,11 +1,8 @@
 package com.spizer.mizer2.basics;
 
-<<<<<<< HEAD
 import android.content.Intent;
-=======
 import android.content.Context;
 import android.content.SharedPreferences;
->>>>>>> master
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -64,84 +61,11 @@ public class BasicsPractice extends AppCompatActivity {
     private String B8;
     private String B9;
 
-//    public String getB1() {
-//        return B1;
-//    }
-//
-//    public void setB1(String b1) {
-//        B1 = b1;
-//    }
-//
-//    public String getB2() {
-//        return B2;
-//    }
-//
-//    public void setB2(String b2) {
-//        B2 = b2;
-//    }
-//
-//    public String getB3() {
-//        return B3;
-//    }
-//
-//    public void setB3(String b3) {
-//        B3 = b3;
-//    }
-//
-//    public String getB4() {
-//        return B4;
-//    }
-//
-//    public void setB4(String b4) {
-//        B4 = b4;
-//    }
-//
-//    public String getB5() {
-//        return B5;
-//    }
-//
-//    public void setB5(String b5) {
-//        B5 = b5;
-//    }
-//
-//    public String getB6() {
-//        return B6;
-//    }
-//
-//    public void setB6(String b6) {
-//        B6 = b6;
-//    }
-//
-//    public String getB7() {
-//        return B7;
-//    }
-//
-//    public void setB7(String b7) {
-//        B7 = b7;
-//    }
-//
-//    public String getB8() {
-//        return B8;
-//    }
-//
-//    public void setB8(String b8) {
-//        B8 = b8;
-//    }
-//
-//    public String getB9() {
-//        return B9;
-//    }
-//
-//    public void setB9(String b9) {
-//        B9 = b9;
-//    }
-
     private int HighScore;
 
     public int getHighScore() {
         return HighScore;
     }
-
     public void setHighScore(int highScore) {
         HighScore = highScore;
     }
@@ -158,7 +82,6 @@ public class BasicsPractice extends AppCompatActivity {
     public int getAS1() {
         return AS1;
     }
-
     public void setAS1(int AS1) {
         this.AS1 = AS1;
     }
@@ -168,7 +91,6 @@ public class BasicsPractice extends AppCompatActivity {
     public double getAS2() {
         return AS2;
     }
-
     public void setAS2(double AS2) {
         this.AS2 = AS2;
     }
@@ -209,33 +131,33 @@ public class BasicsPractice extends AppCompatActivity {
     private boolean MultiProbT;
     private boolean DivisProbT;
 
-    public boolean getAddProbT() {
-        return AddProbT;
-    }
+//    public boolean getAddProbT() {
+//        return AddProbT;
+//    }
 
     public void setAddProbT(boolean addProbT) {
         AddProbT = addProbT;
     }
 
-    public boolean getSubProbT() {
-        return SubProbT;
-    }
+//    public boolean getSubProbT() {
+//        return SubProbT;
+//    }
 
     public void setSubProbT(boolean subProbT) {
         SubProbT = subProbT;
     }
 
-    public boolean getMultiProbT() {
-        return MultiProbT;
-    }
+//    public boolean getMultiProbT() {
+//        return MultiProbT;
+//    }
 
     public void setMultiProbT(boolean multiProbT) {
         MultiProbT = multiProbT;
     }
 
-    public boolean getDivisProbT() {
-        return DivisProbT;
-    }
+//    public boolean getDivisProbT() {
+//        return DivisProbT;
+//    }
 
     public void setDivisProbT(boolean divisProbT) {
         DivisProbT = divisProbT;
@@ -282,24 +204,22 @@ public class BasicsPractice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basics_practice);
 
-<<<<<<< HEAD
-        Bundle extras = new Bundle();
-        extras.putBoolean("is_designed_for_families", true);
+//        Bundle extras = new Bundle();
+//        extras.putBoolean("is_designed_for_families", true);
+//
+//        /** finds the ad view by its ID, then requests a new AD to be built **/
+//        AdView mAdView = (AdView) findViewById(R.id.adView7);
+//
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) // All emulators
+//                .addTestDevice("2A67F802D66C64C858760E73C4C62333") // My Samsung Galaxy Note 4
+//                        //.addNetworkExtrasBundle(AdMobAdapter.class, extras)
+//                .build(); // Builds the AD
+//
+//        mAdView.loadAd(adRequest);
 
-        /** finds the ad view by its ID, then requests a new AD to be built **/
-        AdView mAdView = (AdView) findViewById(R.id.adView7);
-
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) // All emulators
-                .addTestDevice("2A67F802D66C64C858760E73C4C62333") // My Samsung Galaxy Note 4
-                        //.addNetworkExtrasBundle(AdMobAdapter.class, extras)
-                .build(); // Builds the AD
-
-        mAdView.loadAd(adRequest);
-=======
         SharedPreferences mPref = getSharedPreferences("", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = mPref.edit();
->>>>>>> master
 
         PO = (TextView) findViewById(R.id.problemoutput);
         C = (TextView) findViewById(R.id.correctTextView);
@@ -1276,7 +1196,7 @@ public class BasicsPractice extends AppCompatActivity {
         }
     };
 
-    /** this is called when the class basicspractice first starts **/
+//    /** this is called when the class basicspractice first starts **/
 //    private Runnable Start = new Runnable() {
 //        @Override
 //        public void run() {
@@ -1294,11 +1214,13 @@ public class BasicsPractice extends AppCompatActivity {
         S.setText(Integer.toString(getScore()));
         setHighScore(Integer.parseInt(getResources().getString(R.string.saved_session_high_score)));
         editor.putInt(getString(R.string.saved_recent_session_score), getScore());
-        editor.commit();
+        editor.apply();
+//        editor.commit();
         if(getScore() > getHighScore()) {
             editor.putInt(getString(R.string.saved_session_high_score), getScore());
         }
-        editor.commit();
+        editor.apply();
+//        editor.commit();
         GenerateOperation();
     }
 }

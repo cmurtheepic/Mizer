@@ -26,18 +26,18 @@ public class NotWorking extends AppCompatActivity {
         Bundle extras = new Bundle();
         extras.putBoolean("is_designed_for_families", true);
 
-        /** finds the ad view by its ID, then requests a new AD to be built **/
-        AdView mAdView1 = (AdView) findViewById(R.id.adView4);
-        AdView mAdView2 = (AdView) findViewById(R.id.adView5);
-
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) // All emulators
-                .addTestDevice("2A67F802D66C64C858760E73C4C62333") // My Samsung Galaxy Note 4
-                //.addNetworkExtrasBundle(AdMobAdapter.class, extras)
-                .build(); // Builds the AD
-
-        mAdView1.loadAd(adRequest);
-        mAdView2.loadAd(adRequest);
+//        /** finds the ad view by its ID, then requests a new AD to be built **/
+//        AdView mAdView1 = (AdView) findViewById(R.id.adView4);
+//        AdView mAdView2 = (AdView) findViewById(R.id.adView5);
+//
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) // All emulators
+//                .addTestDevice("2A67F802D66C64C858760E73C4C62333") // My Samsung Galaxy Note 4
+//                //.addNetworkExtrasBundle(AdMobAdapter.class, extras)
+//                .build(); // Builds the AD
+//
+//        mAdView1.loadAd(adRequest);
+//        mAdView2.loadAd(adRequest);
     }
 
     @Override
