@@ -34,8 +34,8 @@ android {
         applicationId "com.spizer.mizer2"
         minSdkVersion 18
         targetSdkVersion 23
-        versionCode 5
-        versionName "1.5"
+        versionCode 6
+        versionName "1.6"
         multiDexEnabled true
     }
     buildTypes {
