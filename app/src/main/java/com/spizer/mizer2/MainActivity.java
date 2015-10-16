@@ -1,15 +1,26 @@
 package com.spizer.mizer2;
 
+<<<<<<< HEAD:app/src/main/java/com/spizer/mizer2/MainActivity.java
 import android.app.Activity;
 import android.content.Intent;
+=======
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.support.v7.app.AppCompatActivity;
+>>>>>>> master:app/src/main/java/com/spizer/mizer2/Start/MainActivity.java
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+<<<<<<< HEAD:app/src/main/java/com/spizer/mizer2/MainActivity.java
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.AdRequest;
 import com.spizer.mizer2.Start.MathProblemSelector;
+=======
+import com.spizer.mizer2.basics.Score;
+>>>>>>> master:app/src/main/java/com/spizer/mizer2/Start/MainActivity.java
 import com.spizer.mizer2.otherclasses.NotWorking;
 import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
@@ -22,6 +33,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD:app/src/main/java/com/spizer/mizer2/MainActivity.java
         Bundle extras = new Bundle();
         extras.putBoolean("is_designed_for_families", true);
 
@@ -36,6 +48,10 @@ public class MainActivity extends Activity {
 
         mAdView.loadAd(adRequest);
 
+=======
+        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+>>>>>>> master:app/src/main/java/com/spizer/mizer2/Start/MainActivity.java
     }
 
     @Override
@@ -80,10 +96,16 @@ public class MainActivity extends Activity {
         startActivity(NotWorkingView);
     }
 
+<<<<<<< HEAD:app/src/main/java/com/spizer/mizer2/MainActivity.java
     /** called when the user clicks the settings button
      */
     public void Settings(View view) {
         Intent SettingsV = new Intent(this, SettingsActivity.class);
         startActivity(SettingsV);
+=======
+    // called when the user clicks the rate button
+    public void Rate(View view) {
+
+>>>>>>> master:app/src/main/java/com/spizer/mizer2/Start/MainActivity.java
     }
 }

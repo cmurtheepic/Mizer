@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mizer2</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="hello_world">Hallo Welt!</string>
+    <string name="title_activity_basics_practice">Mizer</string>
+    <string name="title_activity_difficulty_menu">SchwierigkeitsgradMenu</string>
+    <string name="title_activity_math_problem_selector">Mizer</string>
+    <string name="title_activity_not_working">funktioniertnicht</string>
+    <string name="title_activity_problem_selector">Probleme</string>
+    <string name="title_activity_session_menu">SitzungMenüAktivität</string>
+    <string name="hello_blank_fragment">Hallo leer fragment</string>
+</resources>

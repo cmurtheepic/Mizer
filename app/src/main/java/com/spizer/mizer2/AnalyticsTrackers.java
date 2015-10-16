@@ -1,10 +1,9 @@
-package com.spizer.mizer2.utilityclasses;
+package com.spizer.mizer2;
 
 import android.content.Context;
 
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
-import com.spizer.mizer2.R;
 
 import java.util.HashMap;
 import java.util.Map;

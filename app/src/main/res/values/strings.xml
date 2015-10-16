@@ -10,6 +10,7 @@
     <string name="title_activity_problem_selector">Problems</string>
     <string name="title_activity_basics_practice">Mizer</string>
     <string name="title_activity_math_problem_selector">Mizer</string>
+<<<<<<< HEAD
     <string name="bottom_banner_on_start_ad_unit_id">ca-app-pub-3402258212303338/7254570205</string>
     <string name="bottom_banner_on_session_menu_ad_unit_id">ca-app-pub-3402258212303338/1208036604</string>
     <string name="bottom_banner_on_problem_selector_ad_unit_id">ca-app-pub-3402258212303338/2684769805</string>
@@ -95,4 +96,12 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="configure">Configure</string>
     <string name="add_widget">Add widget</string>
+=======
+    <string name="preference_file_key">Mizer_Prefs</string>
+    <string name="saved_recent_session_score"></string>
+    <string name="saved_session_high_score">5</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+>>>>>>> master
 </resources>
