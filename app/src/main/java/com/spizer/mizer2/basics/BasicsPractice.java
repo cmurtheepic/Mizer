@@ -1,7 +1,11 @@
 package com.spizer.mizer2.basics;
 
+<<<<<<< HEAD
+import android.content.Intent;
+=======
 import android.content.Context;
 import android.content.SharedPreferences;
+>>>>>>> master
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -12,7 +16,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.os.Handler;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.R;
+import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 import java.text.DecimalFormat;
 import java.util.Random;
@@ -275,8 +282,24 @@ public class BasicsPractice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basics_practice);
 
+<<<<<<< HEAD
+        Bundle extras = new Bundle();
+        extras.putBoolean("is_designed_for_families", true);
+
+        /** finds the ad view by its ID, then requests a new AD to be built **/
+        AdView mAdView = (AdView) findViewById(R.id.adView7);
+
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) // All emulators
+                .addTestDevice("2A67F802D66C64C858760E73C4C62333") // My Samsung Galaxy Note 4
+                        //.addNetworkExtrasBundle(AdMobAdapter.class, extras)
+                .build(); // Builds the AD
+
+        mAdView.loadAd(adRequest);
+=======
         SharedPreferences mPref = getSharedPreferences("", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = mPref.edit();
+>>>>>>> master
 
         PO = (TextView) findViewById(R.id.problemoutput);
         C = (TextView) findViewById(R.id.correctTextView);
@@ -325,7 +348,8 @@ public class BasicsPractice extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent SettingsV = new Intent(this, SettingsActivity.class);
+            startActivity(SettingsV);
         }
 
         return super.onOptionsItemSelected(item);

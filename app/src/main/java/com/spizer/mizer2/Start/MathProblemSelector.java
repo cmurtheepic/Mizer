@@ -7,8 +7,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.basics.BasicsPractice;
 import com.spizer.mizer2.R;
+import com.spizer.mizer2.notifications.ReminderToPractice;
+import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 public class MathProblemSelector extends AppCompatActivity {
 
@@ -16,6 +20,20 @@ public class MathProblemSelector extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_problem_selector);
+
+        Bundle extras = new Bundle();
+        extras.putBoolean("is_designed_for_families", true);
+
+        /** finds the ad view by its ID, then requests a new AD to be built **/
+        AdView mAdView = (AdView) findViewById(R.id.adView3);
+
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) // All emulators
+                .addTestDevice("2A67F802D66C64C858760E73C4C62333") // My Samsung Galaxy Note 4
+               // .addNetworkExtrasBundle(AdMobAdapter.class, extras)
+                .build(); // Builds the AD
+
+        mAdView.loadAd(adRequest);
     }
 
     @Override
@@ -34,7 +52,8 @@ public class MathProblemSelector extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent SettingsV = new Intent(this, SettingsActivity.class);
+            startActivity(SettingsV);
         }
 
         return super.onOptionsItemSelected(item);
@@ -59,4 +78,9 @@ public class MathProblemSelector extends AppCompatActivity {
 //        Intent GeometryView = new Intent(this, NotWorking.class);
 //        startActivity(GeometryView);
 //    }
+
+    public void notify(View view) {
+        Intent notif = new Intent(this, ReminderToPractice.class);
+        startActivity(notif);
+    }
 }

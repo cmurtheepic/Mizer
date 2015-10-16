@@ -1,19 +1,30 @@
-package com.spizer.mizer2.Start;
+package com.spizer.mizer2;
 
+<<<<<<< HEAD:app/src/main/java/com/spizer/mizer2/MainActivity.java
+import android.app.Activity;
+import android.content.Intent;
+=======
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
+>>>>>>> master:app/src/main/java/com/spizer/mizer2/Start/MainActivity.java
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+<<<<<<< HEAD:app/src/main/java/com/spizer/mizer2/MainActivity.java
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.spizer.mizer2.Start.MathProblemSelector;
+=======
 import com.spizer.mizer2.basics.Score;
+>>>>>>> master:app/src/main/java/com/spizer/mizer2/Start/MainActivity.java
 import com.spizer.mizer2.otherclasses.NotWorking;
-import com.spizer.mizer2.R;
+import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     public boolean PreviousSession = false;
 
@@ -22,8 +33,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD:app/src/main/java/com/spizer/mizer2/MainActivity.java
+        Bundle extras = new Bundle();
+        extras.putBoolean("is_designed_for_families", true);
+
+        /** finds the ad view by its ID, then requests a new AD to be built **/
+        AdView mAdView = (AdView) findViewById(R.id.adView1);
+
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) // All emulators
+                .addTestDevice("2A67F802D66C64C858760E73C4C62333") // My Samsung Galaxy Note 4
+                //.addNetworkExtrasBundle(AdMobAdapter.class, extras)
+                .build(); // Builds the AD
+
+        mAdView.loadAd(adRequest);
+
+=======
         SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
+>>>>>>> master:app/src/main/java/com/spizer/mizer2/Start/MainActivity.java
     }
 
     @Override
@@ -42,7 +70,8 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent SettingsV = new Intent(this, SettingsActivity.class);
+            startActivity(SettingsV);
         }
 
         return super.onOptionsItemSelected(item);
@@ -55,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             Intent OpenMPS = new Intent(this, MathProblemSelector.class);
             startActivity(OpenMPS);
         } else {
-            System.out.println("Something when terribly wrong at line: 45");
+            System.out.println("Something went terribly wrong at line: 45");
         }
     }
 
@@ -67,8 +96,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(NotWorkingView);
     }
 
+<<<<<<< HEAD:app/src/main/java/com/spizer/mizer2/MainActivity.java
+    /** called when the user clicks the settings button
+     */
+    public void Settings(View view) {
+        Intent SettingsV = new Intent(this, SettingsActivity.class);
+        startActivity(SettingsV);
+=======
     // called when the user clicks the rate button
     public void Rate(View view) {
 
+>>>>>>> master:app/src/main/java/com/spizer/mizer2/Start/MainActivity.java
     }
 }
