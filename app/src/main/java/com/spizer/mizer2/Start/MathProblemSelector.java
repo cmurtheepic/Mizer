@@ -1,4 +1,4 @@
-package com.spizer.mizer2.start;
+package com.spizer.mizer2.Start;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.basics.BasicsPractice;
 import com.spizer.mizer2.R;
 import com.spizer.mizer2.notifications.ReminderToPractice;
@@ -59,8 +61,7 @@ public class MathProblemSelector extends AppCompatActivity {
 
     /** called when the user clicks the BASICS button **/
     public void Basics(View view) {
-        Intent BasicView = new Intent(MathProblemSelector.this, BasicsPractice.class);
-        overridePendingTransition(R.anim.mathproblemtrans1, R.anim.mathproblemtrans2);
+        Intent BasicView = new Intent(this, BasicsPractice.class);
         startActivity(BasicView);
     }
 

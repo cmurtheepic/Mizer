@@ -8,8 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.google.ads.mediation.admob.AdMobAdapter;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.R;
-import com.spizer.mizer2.start.SessionMenuActivity;
+import com.spizer.mizer2.Start.SessionMenuActivity;
 import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 public class NotWorking extends AppCompatActivity {

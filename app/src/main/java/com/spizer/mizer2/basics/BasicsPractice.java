@@ -9,18 +9,13 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.Animation;
-import android.view.animation.GridLayoutAnimationController;
 import android.widget.Button;
-import android.widget.GridLayout;
 import android.widget.TextView;
 import android.os.Handler;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.R;
-import com.spizer.mizer2.animations.BasicsSwitchAnimation;
 import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 import java.text.DecimalFormat;
@@ -204,15 +199,10 @@ public class BasicsPractice extends AppCompatActivity {
 
     Handler Handler = new Handler();
 
-    GridLayout grid = new GridLayout(this);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basics_practice);
-
-        grid = (GridLayout) findViewById(R.id.grid1);
-        grid.startAnimation(new BasicsSwitchAnimation());
 
 //        Bundle extras = new Bundle();
 //        extras.putBoolean("is_designed_for_families", true);

@@ -3,13 +3,17 @@ package com.spizer.mizer2;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-import com.spizer.mizer2.start.MathProblemSelector;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.spizer.mizer2.Start.MathProblemSelector;
+import com.spizer.mizer2.basics.Score;
 import com.spizer.mizer2.otherclasses.NotWorking;
 import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
@@ -69,8 +73,7 @@ public class MainActivity extends Activity {
     /** unless it was the first time starting the app **/
     public void MPS(View view) {
         if (!PreviousSession) {
-            Intent OpenMPS = new Intent(MainActivity.this, MathProblemSelector.class);
-            overridePendingTransition(R.anim.maintrans1, R.anim.maintrans2);
+            Intent OpenMPS = new Intent(this, MathProblemSelector.class);
             startActivity(OpenMPS);
         } else {
             System.out.println("Something went terribly wrong at line: 45");
