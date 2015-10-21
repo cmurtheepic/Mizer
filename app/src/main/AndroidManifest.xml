@@ -5,14 +5,16 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo"
         android:label="Mizer"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Start.MainActivity"
+            android:name=".MainActivity"
             android:label="Mizer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +25,10 @@
         <activity
             android:name=".Start.SessionMenuActivity"
             android:label="Mizer"
-            android:parentActivityName=".Start.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".basics.DifficultyMenu"
@@ -34,15 +36,15 @@
             android:parentActivityName=".basics.ProblemSelector" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".otherclasses.NotWorking"
             android:label="Mizer"
-            android:parentActivityName=".Start.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".basics.ProblemSelector"
@@ -50,7 +52,7 @@
             android:parentActivityName=".Start.MathProblemSelector" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".basics.BasicsPractice"
@@ -59,12 +61,12 @@
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".Start.MathProblemSelector"
             android:label="@string/title_activity_math_problem_selector"
-            android:parentActivityName=".Start.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Start.SessionMenuActivity" />
@@ -73,6 +75,31 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".utilityclasses.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.spizer.mizer2.MainActivity" />
+        </activity>
+
+        <receiver android:name=".otherclasses.CurrentScoreWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/current_score_widget_info" />
+        </receiver>
+
+        <activity android:name=".otherclasses.CurrentScoreWidgetConfigureActivity" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
