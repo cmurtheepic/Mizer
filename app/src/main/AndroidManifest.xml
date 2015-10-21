@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Start.SessionMenuActivity"
+            android:name=".start.SessionMenuActivity"
             android:label="Mizer"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -49,7 +49,7 @@
         <activity
             android:name=".basics.ProblemSelector"
             android:label="Mizer"
-            android:parentActivityName=".Start.MathProblemSelector" >
+            android:parentActivityName=".start.MathProblemSelector" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -64,12 +64,12 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Start.MathProblemSelector"
+            android:name=".start.MathProblemSelector"
             android:label="@string/title_activity_math_problem_selector"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Start.SessionMenuActivity" />
+                android:value=".start.SessionMenuActivity" />
         </activity>
 
         <meta-data

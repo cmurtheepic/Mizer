@@ -3,18 +3,15 @@ package com.spizer.mizer2;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.AdRequest;
-import com.spizer.mizer2.Start.MathProblemSelector;
-import com.spizer.mizer2.basics.Score;
+import android.widget.Button;
+
 import com.spizer.mizer2.otherclasses.NotWorking;
+import com.spizer.mizer2.start.MathProblemSelector;
 import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 public class MainActivity extends Activity {
@@ -25,6 +22,21 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button start = (Button) findViewById(R.id.Start_MainActivity_Button);
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!PreviousSession) {
+                    Intent OpenMPS = new Intent(MainActivity.this, MathProblemSelector.class);
+                    startActivity(OpenMPS);
+                    overridePendingTransition(R.anim.mainanim1, R.anim.mainanim2);
+                } else {
+                    System.out.println("Something went terribly wrong at line: 45");
+                }
+
+            }
+        });
 
         Bundle extras = new Bundle();
         extras.putBoolean("is_designed_for_families", true);
@@ -67,17 +79,6 @@ public class MainActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    /** called when the user clicks the START button **/
-    /** unless it was the first time starting the app **/
-    public void MPS(View view) {
-        if (!PreviousSession) {
-            Intent OpenMPS = new Intent(this, MathProblemSelector.class);
-            startActivity(OpenMPS);
-        } else {
-            System.out.println("Something went terribly wrong at line: 45");
-        }
     }
 
     /** called when the user clicks a button for a feature that currently does not exist in the

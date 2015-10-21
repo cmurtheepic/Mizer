@@ -1,4 +1,4 @@
-package com.spizer.mizer2.Start;
+package com.spizer.mizer2.start;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,9 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.basics.BasicsPractice;
 import com.spizer.mizer2.R;
 import com.spizer.mizer2.notifications.ReminderToPractice;
@@ -20,6 +19,16 @@ public class MathProblemSelector extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_problem_selector);
+
+        Button basics = (Button) findViewById(R.id.BasicsButton);
+        basics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             Intent base = new Intent(MathProblemSelector.this, BasicsPractice.class);
+                overridePendingTransition(R.anim.basicstrans1in, R.anim.basicstrans2out);
+                startActivity(base);
+            }
+        });
 
 //        Bundle extras = new Bundle();
 //        extras.putBoolean("is_designed_for_families", true);
@@ -57,12 +66,6 @@ public class MathProblemSelector extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    /** called when the user clicks the BASICS button **/
-    public void Basics(View view) {
-        Intent BasicView = new Intent(this, BasicsPractice.class);
-        startActivity(BasicView);
     }
 
     /** called when the user clicks the ALGEBRA button **/

@@ -1,4 +1,4 @@
-package com.spizer.mizer2.Start;
+package com.spizer.mizer2.start;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,8 +7,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.otherclasses.NotWorking;
 import com.spizer.mizer2.basics.ProblemSelector;
 import com.spizer.mizer2.R;
