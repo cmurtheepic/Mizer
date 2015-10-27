@@ -1,5 +1,5 @@
 This is the Legal Document regarding the use of Work(s)/Asset(s)/Property of an Entity/Individual a.k.a the rightful Owner(s)
-Of the refered or otherwise indicated property.
+Of the referred or otherwise indicated property.
 
         a) Education Purposes 
           * Such as use in Public School(s), Private School(s), or for Personal / Self-Education, * and/or other means

@@ -13,8 +13,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.os.Handler;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+//import com.google.android.gms.ads.AdRequest;
+//import com.google.android.gms.ads.AdView;
 import com.spizer.mizer2.R;
 import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
@@ -187,10 +187,11 @@ public class BasicsPractice extends AppCompatActivity {
 
     DecimalFormat d1 = new DecimalFormat("####");
 
-    private boolean clicked;
+    private boolean clicked = false;
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     public boolean getClicked() {
-        return clicked;
+        return !clicked;
     }
 
     public void setClicked(boolean clicked) {
@@ -890,7 +891,7 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB1 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (!getClicked()) {
+            if (getClicked()) {
                 if (getS1() == 0) {
                     C.setEnabled(true);
                     setClicked(true);
@@ -922,7 +923,7 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB2 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (!getClicked()) {
+            if (getClicked()) {
                 if (getS1() == 1) {
                     C.setEnabled(true);
                     setClicked(true);
@@ -954,7 +955,7 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB3 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (!getClicked()) {
+            if (getClicked()) {
                 if (getS1() == 2) {
                     C.setEnabled(true);
                     setClicked(true);
@@ -986,7 +987,7 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB4 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(!getClicked()) {
+            if(getClicked()) {
                 if (getS1() == 3) {
                     C.setEnabled(true);
                     setClicked(true);
@@ -1018,7 +1019,7 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB5 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(!getClicked()) {
+            if(getClicked()) {
                 if (getS1() == 4) {
                     C.setEnabled(true);
                     setClicked(true);
@@ -1050,7 +1051,7 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB6 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(!getClicked()) {
+            if(getClicked()) {
                 if (getS1() == 5) {
                     C.setEnabled(true);
                     setClicked(true);
@@ -1082,7 +1083,7 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB7 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(!getClicked()) {
+            if(getClicked()) {
                 if (getS1() == 6) {
                     C.setEnabled(true);
                     setClicked(true);
@@ -1114,7 +1115,7 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB8 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(!getClicked()) {
+            if(getClicked()) {
                 if (getS1() == 7) {
                     C.setEnabled(true);
                     setClicked(true);
@@ -1146,7 +1147,7 @@ public class BasicsPractice extends AppCompatActivity {
     View.OnClickListener myB9 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(!getClicked()) {
+            if(getClicked()) {
                 if (getS1() == 8) {
                     setClicked(true);
                     C.setEnabled(true);

@@ -1,6 +1,6 @@
 package com.spizer.mizer2.basics;
 
-import android.app.Activity;
+//import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.spizer.mizer2.R;
 
-import org.w3c.dom.Text;
+//import org.w3c.dom.Text;
 
 /**
  * A simple {@link Fragment} subclass.

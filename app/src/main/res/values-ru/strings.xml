@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appwidget_text">пример</string>
+    <string name="action_quickResume">Быстрый резюме</string>
+    <string name="action_reply">Ответить</string>
+    <string name="action_settings">настройки</string>
+    <string name="action_share">Доля</string>
+    <string name="add_widget">Добавить виджет</string>
+    <string name="title_activity_settings">настройки</string>
+    <string name="title_activity_session_menu">МенюCессии</string>
+    <string name="title_activity_not_working">НеRаботает</string>
+    <string name="title_activity_problem_selector">проблем</string>
+    <string name="title_activity_difficulty_menu">Сложностьменю</string>
+    <string name="preference_file_key">                  предпочтения</string>
+    <string name="pref_title_vibrate">вибрировать</string>
+    <string name="pref_title_system_sync_settings">Настройки синхронизации системы</string>
+    <string name="pref_title_sync_frequency">частота синхронизации</string>
+    <string name="pref_title_social_recommendations">Включить социальные рекомендации</string>
+    <string name="pref_title_ringtone">Мелодия</string>
+    <string name="pref_title_new_message_notifications">Уведомления о новых сообщениях сообщение</string>
+    <string name="pref_title_display_name">Отображаемое имя</string>
+    <string name="pref_title_add_friends_to_messages">добавить друзей на сообщения</string>
+    <string name="pref_ringtone_silent">тихий</string>
+    <string name="pref_header_notifications">Уведомления</string>
+    <string name="pref_header_general">Генеральная</string>
+    <string name="pref_header_data_sync">Данных и синхронизации</string>
+    <string name="pref_description_social_recommendations">Рекомендации для людей, чтобы связаться на основе вашей истории сообщений</string>
+    <string name="pref_default_display_name">например. Джон Смит</string>
+    <string name="hello_world">Привет мир!</string>
+    <string name="configure">конфигурировать</string>
+</resources>

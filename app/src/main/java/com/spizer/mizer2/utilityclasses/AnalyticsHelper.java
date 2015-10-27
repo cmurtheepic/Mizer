@@ -7,9 +7,6 @@ import com.google.android.gms.analytics.Tracker;
 import com.spizer.mizer2.R;
 
 /**
- * Created by cmurt on 10/6/2015.
- */
-/**
  * This is a subclass of {@link Application} used to provide shared objects for this app, such as
  * the {@link Tracker}.
  */

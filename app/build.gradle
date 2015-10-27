@@ -42,11 +42,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //noinspection GroovyAssignabilityCheck
             signingConfig signingConfigs.Release
         }
         debugbeta {
             debuggable false
             jniDebuggable false
+            //noinspection GroovyAssignabilityCheck
             signingConfig signingConfigs.DebugBeta
             renderscriptDebuggable false
             minifyEnabled false
@@ -55,6 +57,7 @@ android {
         debugalpha {
             debuggable false
             jniDebuggable false
+            //noinspection GroovyAssignabilityCheck
             signingConfig signingConfigs.DebugAlpha
             renderscriptDebuggable false
             minifyEnabled false

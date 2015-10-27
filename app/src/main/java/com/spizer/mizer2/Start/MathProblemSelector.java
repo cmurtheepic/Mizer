@@ -10,7 +10,6 @@ import android.widget.Button;
 
 import com.spizer.mizer2.basics.BasicsPractice;
 import com.spizer.mizer2.R;
-import com.spizer.mizer2.notifications.ReminderToPractice;
 import com.spizer.mizer2.utilityclasses.SettingsActivity;
 
 public class MathProblemSelector extends AppCompatActivity {
@@ -81,9 +80,4 @@ public class MathProblemSelector extends AppCompatActivity {
 //        Intent GeometryView = new Intent(this, NotWorking.class);
 //        startActivity(GeometryView);
 //    }
-
-    public void notify(View view) {
-        Intent notif = new Intent(this, ReminderToPractice.class);
-        startActivity(notif);
-    }
 }
